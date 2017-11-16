@@ -90,7 +90,6 @@
 .ng-toolbar .ng-sn-site-nav {
     width: 988px;
     padding: 20px 0;
-    left: 0;
     left: auto;
 }
 .ng-toolbar .ng-d-box {
@@ -256,7 +255,7 @@
     position:relative;
     float:right;
     width:550px;
-    margin:30 0 0 0;
+    margin: 30px 0 0 0;
     z-index:6790;
     font-family:'Microsoft Yahei';
 }
@@ -343,9 +342,9 @@
     margin-left:-595px;
     position:absolute;
     width:190px;
-    top:9;
+    top: 9px;
     left:50%;
-    z-index-7675
+    z-index:7675;
     font-family:"Microsoft Yahei";
 }
 .ng-all-hook{
@@ -358,7 +357,7 @@
     padding-left:27px;
     color:#fff !important;
     font-weight:400;
-    text-decortion:none;
+    text-decoration:none;
 }
 .ng-all-hook,.ng-nab-bar{
     display:block;
@@ -369,7 +368,7 @@
     height:12px;
     top:14px;
     left:9px;
-    background:url();
+    background:url('../img_fresh/newbg.png');
     display: block;
     position:absolute;
 }
@@ -424,7 +423,7 @@
 .ng-nav-index ul.ng-nav li{
     float:left;
     display:block;
-    positon:relative;
+    position:relative;
     height:38px;
     font-weight:700;
     padding:0 12px 0 13px;
@@ -443,7 +442,7 @@
     bottom:-8px;
     left:50%;
     margin-left:-12px;
-    background:url() -37px 0;
+    background:url('../img_fresh/newbg.png') -37px 0;
     transition:all .5s;
 }
 

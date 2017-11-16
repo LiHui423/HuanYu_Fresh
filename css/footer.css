@@ -1,0 +1,163 @@
+.ng-footer{
+    margin-top:10px;
+}
+.ng-footer .ng-ser-box{
+    width:100%;
+    background:#f5f5f5;
+    border-top:1px solid #e7e7e7;
+}
+.ng-footer .ng-ser-box-con{
+    margin:0 auto;
+    overflow:hidden;
+}
+.ng-footer .ng-promise{
+    padding:12px 0;
+    height:73px;
+    border-bottom:1px solid #eaeaea;
+}
+.ng-footer .ng-promise dl{
+    width:250px;
+    float:left;
+    overflow:hidden;
+}
+.ng-footer .ng-promise dt{
+    float:left;
+    width:48px;
+    height:48px;
+    margin-right:8px;
+}
+.ng-footer .ng-promise dt img{
+    display:block;
+    width:48px;
+    height:48px;
+}
+.ng-footer .ng-promise dd{
+    width:180px;
+    float:left;
+    height:48px;
+}
+.ng-footer .ng-promise dd p{
+    line-height:24px;
+    width:100%;
+    color:#545454;
+}
+.ng-footer .ng-promise dd p strong{
+    font-weight:700;
+    color:#222;
+    font-size:14px;
+}
+.ng-footer .ng-help-box{
+    width:1050px;
+    float:left;
+    height:180px;
+}
+.ng-footer .ng-help-box dl{
+    width:210px;
+    float:left;
+    height:160px;
+}
+.ng-footer .ng-help-box dt{
+    width:100%;
+    line-height:40px;
+    font-weight:700;
+    color:#545454;
+    height:35px;
+    font-size:14px;
+    overflow:hidden;
+}
+.ng-footer .ng-help-box dd{
+    width:100%;
+    line-height:22px;
+}
+.ng-footer .ng-help-box dd a{
+    color:#545454;
+}
+.ng-s-footer{
+    background:#fff;
+    width:100%;
+    padding-top:15px;
+    text-align:center;
+}
+.ng-s-footer .ng-s-f-con{
+    width:1190px;
+    min-width:1190px;
+    height:160px;
+    margin:0 auto;
+    font-family:"Microsoft Yahei";
+}
+.ng-s-footer p .ng-url-list{
+    line-height:25px;
+    height:25px;
+}
+.ng-s-footer p .ng-url-list a{
+    color:#666;
+}
+.ng-s-footer p .ng-url-list span{
+    color:#888;
+    padding:0 8px;
+}
+.ng-s-footer p.ng-copyright{
+    width:1190px;
+    float:left;
+    color:#999;
+    margin-top:0;
+    line-height:25px;
+    height:25px;
+}
+.ng-s-footer p.ng-copyright span{
+    color:#888;
+    padding:0 8px;
+}
+.gwab{
+    position:relative;
+    padding-left:25px;
+}
+.gwab i{
+    position:absolute;
+    left:0;
+    top:0;
+    width:20px;
+    height:20px;
+    background:url('../img_fresh/footer/gwab-icon.png') no-repeat;
+}
+p.ng-copyright.ng-copyright-2{
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

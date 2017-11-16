@@ -1,3 +1,122 @@
+.ng-nav-bar{
+	border-bottom:2px solid #333;
+	position:relative;
+	width:100%;
+	background:#fff;
+	z-index: 7670
+}
+.ng-all-hook,.ng-nav-bar{
+	height:38px;
+	overflow:visible;
+}
+.ng-sort{
+	margin-left:-595px;
+	position:absolute;
+	width:190px;
+	top: 9px;
+	left:50%;
+	z-index:7675;
+	font-family:"Microsoft Yahei";
+}
+.ng-all-hook{
+	width:163px;
+	line-height:38px;
+	font-size:13px;
+	left:0;
+	top:0;
+	background:#f90;
+	padding-left:27px;
+	color:#fff !important;
+	font-weight:400;
+	text-decoration:none;
+}
+.ng-all-hook,.ng-nab-bar{
+	display:block;
+	position:absolute;
+}
+.ng-all-hook i{
+	width:12px;
+	height:12px;
+	top:14px;
+	left:9px;
+	background:url('../img_fresh/newbg.png');
+	display: block;
+	position:absolute;
+}
+.ng-all-hook span{
+	font-weight: 700
+}
+.ng-sort-list-box{
+	display:none;
+	top:38px;
+}
+.ng-sort-list-box .nav-cover{
+	height:440px;
+	position:absolute;
+	left:0;
+	width:190px;
+}
+.ng-sort-list-box .nav-cover{
+	top:0;
+	background: #252221;
+	opacity:0.9;
+}
+.ng-sort-list-box .sort-list{
+	position:absolute;
+	left:0;
+	top:1px;
+	height:438px;
+	width:190px;
+}
+.ng-sort-list-box .sort-list li.hei33{
+	height:32px;
+	line-height:32px;
+}
+.ng-sort-list-box .sort-list li{
+	position:relative;
+	width:175px;
+	padding:0 10px 0 8px;
+}
+.ng-nav-bar-chanel .ng-nav-index{
+	width:785px;
+}
+.ng-nav-index{
+	margin-left:-450px;
+	z-index:7669;
+	position:absolute;
+	left:50%;
+	padding-left:10px;
+	height:38px;
+	line-height:38px;
+	overflow:hidden;
+	font-family:'Microsoft Yahei';
+}
+.ng-nav-index ul.ng-nav li{
+	float:left;
+	display:block;
+	position:relative;
+	height:38px;
+	font-weight:700;
+	padding:0 12px 0 13px;
+}
+.ng-nav-index ul.ng-nav li a{
+	position:relative;
+	float: left;
+	color:#333;
+	font-size:15px;
+	text-decoration:none;
+}
+.ng-nav-index ul.ng-nav li span{
+	position:absolute;
+	width:25px;
+	height:8px;
+	bottom:-8px;
+	left:50%;
+	margin-left:-12px;
+	background:url('../img_fresh/newbg.png') -37px 0;
+	transition:all .5s;
+}
+
 .first-screen{
 	position:relative;
 	min-width:990px;
@@ -66,7 +185,7 @@
 	height:19px;
 	top:5px;
 	background:url('../img_fresh/icon.png') no-repeat;
-	background-position: :-1050px -26;
+	background-position:-1050px -26px;
 }
 .sxs-nav .sort-list li .sxs-icon3{
 	position:absolute;
@@ -97,7 +216,7 @@
 	top:0;
 	left:0;
 	width:100%;
-	height;400px;
+	height:400px;
 	text-align:center;
 }
 .banner-wrapper .banner{
@@ -107,7 +226,7 @@
 .banner-wrapper .banner li{
 	position:absolute;
 	top:0;
-	left:0px;
+	left:0;
 	width:100%;
 	height:400px;
 }
@@ -208,7 +327,7 @@
 	font-size:24px;
 }
 .lazy-loading, img.err-product{
-	background: url() 50% 50% no-repeat
+	background: url('../img_fresh/icon.png') 50% 50% no-repeat
 }
 img.headBG.lazy-loading{
 	width:1190px;
@@ -516,7 +635,7 @@ img.headBG.lazy-loading{
 	position:absolute;
 	width:25px;
 	height:18px;
-	left:0px;
+	left:0;
 	top:0;
 	line-height:18px;
 	text-align:center;
@@ -530,7 +649,7 @@ img.headBG.lazy-loading{
 .su-floor1 .su-col3 li .triangleBefore{
 	position: absolute;
 	top: 12px;
-	left: 0px;
+	left: 0;
 	width: 0;
 	height: 0;
 	border-top: 5px solid transparent;
@@ -684,6 +803,61 @@ img.headBG.lazy-loading{
 	overflow:hidden;
 }
 
+/*************电梯样式*******************/
+div.ECode-floatBar{
+	position:fixed;
+	top:auto;
+	left:auto;
+	z-index:7099;
+	right:50%;
+	margin-right:610px;
+	bottom:0px;
+	margin-bottom:100px;
+	display:block;
+}
+.float-bar{
+	width:52px;
+}
+.float-bar .su{
+	background:#e94820;
+}
+.float-bar li{
+	position:relative;
+	width:52px;
+	height:52px;
+	margin-top:1px;
+	font-size:0;
+	text-align:center;
+	background:#666;
+}
+.float-bar .su p{
+	width:42px;
+	height:16px;
+	padding-top:18px;
+}
+.float-bar li p{
+	font:14px/16px "微软雅黑";
+	height:32px;
+	width:32px;
+	padding-top:10px;
+	padding-left:10px;
+	cursor:pointer;
+	color:#fff;
+	overflow:hidden;
+}
+.float-bar .hover{
+	background:#ffc001;
+}
+.float-bar .return{
+	background:#999;
+}
+.float-bar .return em{
+	display:inline-block;
+	width:20px;
+	height:10px;
+	margin-top:10px;
+	background: url('../img_fresh/icon.png') no-repeat -1102px -26px;
+}
 
 
 
