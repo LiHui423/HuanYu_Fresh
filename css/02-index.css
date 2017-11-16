@@ -1,0 +1,769 @@
+.first-screen{
+	position:relative;
+	min-width:990px;
+	height:400px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.sxs-nav-wrapper{
+	position:relative;
+	left:50%;
+	margin-left:-594px;
+	width:190px;
+	height:400px;
+	z-index:10;
+}
+.sxs-nav{
+	position:relative;
+	float:left;
+	width:190px;
+	height:400px;
+	z-index:1;
+	color:#333;
+	font-family:'Microsoft Yahei', tahoma, arial, "Hiragino Sans GB", tahoma, arial, "Hiragino Sans GB";
+}
+.sxs-nav .sort-list{
+	width:190px;
+	height:400px;
+	background-color:#fff;
+}
+.sxs-nav .sort-list li{
+	position:relative;
+	width:180px;
+	height:8px;
+	font-size:14px;
+	padding-left:10px;
+	overflow:hidden;
+}
+.sxs-nav .sort-list li .sxs-icon1{
+	position:absolute;
+	width:12px;
+	height:17px;
+	top:6px;
+	background:url('../img_fresh/icon.png') no-repeat -1050px 0;
+}
+.sxs-nav .sort-list li .sort-item-title{
+	margin-left:25px;
+	height:20px;
+	width:60px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.sxs-nav .sort-list li .sort-item-list{
+	width:180px;
+	height:40px;
+}
+.sxs-nav .sort-list li a{
+	float:left;
+	width:56px;
+	height:20px;
+	margin-right:4px;
+	overflow:hidden;
+}
+.sxs-nav .sort-list li .sxs-icon2{
+	position:absolute;
+	width:16px;
+	height:19px;
+	top:5px;
+	background:url('../img_fresh/icon.png') no-repeat;
+	background-position: :-1050px -26;
+}
+.sxs-nav .sort-list li .sxs-icon3{
+	position:absolute;
+	width:18px;
+	height:15px;
+	top:8px;
+	background:url('../img_fresh/icon.png') no-repeat;
+	background-position: -1076px 0
+}
+.sxs-nav .sort-list li .sxs-icon4{
+	position:absolute;
+	width:18px;
+	height:15px;
+	top:8px;
+	background:url('../img_fresh/icon.png') no-repeat;
+	background-position: -1076px -26px
+}
+.sxs-nav .sort-list li .sxs-icon5{
+	position:absolute;
+	width:18px;
+	height:18px;
+	top:6px;
+	background:url('../img_fresh/icon.png') no-repeat;
+	background-position: -1102px 0
+}
+.banner-wrapper{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height;400px;
+	text-align:center;
+}
+.banner-wrapper .banner{
+	width:100%;
+	height:400px;
+}
+.banner-wrapper .banner li{
+	position:absolute;
+	top:0;
+	left:0px;
+	width:100%;
+	height:400px;
+}
+.banner-wrapper .banner li a{
+	position:absolute;
+	top:0;
+	left:50%;
+	width:800px;
+	height:400px;
+	margin-left:-406px;
+	overflow:hidden;
+}
+.banner-wrapper .banner li img{
+	display:block;
+	width:800px;
+	height:400px;
+}
+.banner-wrapper .left-point{
+	left:50%;
+	margin-left:-395px;
+}
+.banner-wrapper .point{
+	position:absolute;
+	top:159px;
+	width:37px;
+	height:60px;
+	background-color:#000;
+	text-align:center;
+	opacity:0.2;
+}
+.banner-wrapper .left-point i{
+	background-position: -965px 0
+}
+.banner-wrapper .point i{
+	display: inline-block;
+	width:21px;
+	height:40px;
+	vertical-align:middle;
+}
+.banner-wrapper .right-point{
+	right:50%;
+	margin-right:-385px;
+}
+.banner-wrapper .right-point i{
+	background-position: -989px 0;
+}
+.banner-wrapper .banner-nav-wrapper{
+	position:absolute;
+	top:375px;
+	width:100%;
+	height:5px;
+	text-align:center;
+}
+.banner-wrapper .banner-nav-wrapper .banner-nav{
+	position:relative;
+	display:inline-block;
+	height:15px;
+	background:#60524f;
+	padding-left:8px;
+	border-radius:8px;
+}
+.banner-wrapper .banner-nav-wrapper .banner-nav a{
+	display: inline-block;
+	margin-right:8px;
+	margin-top:2px;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	opacity:0.6;
+}
+.banner-wrapper .banner-nav-wrapper .banner-nav a.current{
+	background: #1b212f;
+}
+.sxs-activity2{
+	position:absolute;
+	width:200px;
+	height:400px;
+	top:0;
+	right:50%;
+	margin-right:-594px;
+}
+.sxs-activity2 a{
+	display:block;
+	width:200px;
+	height:200px;
+}
+.todayRec{
+	position:relative;
+	width:1190px;
+	height:365px;
+	margin:28px auto;
+	overflow:hidden;
+}
+.todayRec h2{
+	position:relative;
+	height:70px;
+	line-height:70px;
+	font-size:24px;
+}
+.lazy-loading, img.err-product{
+	background: url() 50% 50% no-repeat
+}
+img.headBG.lazy-loading{
+	width:1190px;
+	height:70px;
+}
+.todayRec h2 .textBox{
+	position:absolute;
+	width:200px;
+	left:30px;
+	top:10px;
+	font:bold 22px/26px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color:#fff;
+	z-index:100;
+}
+.todayRec h2 .textBox em{
+	float:left;
+	width:36px;
+	margin-right:15px;
+	margin-top:6px;
+	background:url('../img_fresh/icon.png') no-repeat;
+	background-position: -1012px 0;
+}
+.todayRec h2 .first{
+	width:120px;
+	height:28px;
+	overflow:hidden;
+}
+.todayRec h2 .last{
+	width:120px;
+	height:20px;
+	font-size:12px;
+	font-weight:normal;
+	overflow:hidden;
+}
+.todayRec>div{
+	overflow:hidden;
+	border:1px solid #ccc;
+	box-shadow: 0 0 10px #ccc;
+	margin-top:-10px;
+	z-index:-1;
+}
+.todayRec ul{
+	position:relative;
+	padding-top:10px;
+	margin-right:-10px;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility: hidden;
+}
+.todayRec .line{
+	position:absolute;
+	left:237px;
+	top:28px;
+	width:0;
+	height: 218px;
+	border-right:1px dashed #ccc;
+}
+.todayRec .line2{
+	left:475px;
+}
+.todayRec .line3{
+	left:713px;
+}
+.todayRec .line4{
+	left:951px;
+}
+.todayRec ul li{
+	float:left;
+	width:237px;
+	height:281px;
+	border:0;
+	margin-right:1px;
+	padding-left:0;
+	overflow:hidden;
+}
+.commodity{
+	position:relative;
+	border-bottom:1px solid#ccc;
+	border-right:1px solid #ccc;
+}
+.todayRec ul .commodity-wrap{
+	height:284px;
+	width:233px;
+	float:left;
+	border:2px solid transparent;
+}
+.todayRec ul .commodity-wrap>a{
+	display:block;
+	margin-left:12px;
+	margin-top:-3px;
+	width:210px;
+	height:210px;
+	overflow:hidden;
+}
+.todayRec ul li a img{
+	-webkit-transition:-webkit-transform .5s
+
+}
+.todayRec ul li a img:hover{
+	transform: scale(1.1);
+}
+.todayRec .commodity .commodity-intro{
+	width:215px;
+	margin-left:12px;
+	margin-top:8px;
+}
+.commodity-intro{
+	width:170px;
+	margin-left:13px;
+}
+.todayRec .commodity-intro p{
+	height:35px;
+}
+.commodity-intro p{
+	height:40px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.commodity-intro p {
+	font:12px/15px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	display:-webkit-box;
+	overflow:hidden;
+}
+.commodity-intro .now-price{
+	font:bold 16px/20px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color:#ea0028;
+}
+.commodity-intro .price-last{
+	font-size:12px;
+}
+.commodity-intro .last-price{
+	margin-left:10px;
+	font:12px/14px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	color:#999;
+}
+
+/***********好物优选楼层**********/
+.su-floor1{
+	position:relative;
+	width:1190px;
+	margin:10px auto;
+	font-family:"Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+.floor-title{
+	width:1190px;
+	height:80px;
+	text-align:center;
+	font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+}
+.floor-title .first{
+	position:absolute;
+	display:inline-block;
+	width:500px;
+	height:2px;
+	left:0;
+	top:40px;
+	background: #e94820;
+}
+.floor-title div{
+	margin-top:10px;
+	display: inline-block;
+}
+.floor-title .lg{
+	width:176px;
+	height:33px;
+	overflow:hidden;
+	font-weight:normal;
+	font-size:22px;
+	color:#e94820;
+}
+.floor-title .sm{
+	width:176px;
+	height:18px;
+	overflow:hidden;
+	font-size:12px;
+	color:#888;
+}
+.floor-title i.sec{
+	position:absolute;
+	display: inline-block;
+	width:500px;
+	height:2px;
+	right:0;
+	top:40px;
+	background:#e94820;
+}
+.su-floor1 .su-col1{
+	height:537px;
+}
+.su-col1{
+	float:left;
+	width:188px;
+	height:539px;
+	border:1px solid #ccc;
+}
+.su-col1 .picBox{
+	height:440px;
+}
+.su-col1 a{
+	display: block;
+	float:left;
+}
+.su-col1 .hot{
+	padding:20px 0 20px 10px;
+}
+.su-col1 .hot p{
+	font:bold 16px/24px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	width:150px;
+	height:24px;
+	overflow:hidden;
+}
+.su-col1 .hot ul{
+	height:40px;
+	overflow:hidden;
+}
+.su-col1 .hot li{
+	float:left;
+	width:55px;
+	height:20px;
+	margin-right:4px;
+	overflow:hidden;
+}
+.su-col1 a{
+	display: block;
+	float:left;
+}
+.su-floor1 .su-col2{
+	float:left;
+	width:799px;
+	height:538px;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	overflow: hidden;
+}
+.su-floor1 .su-col2 ul{
+	margin-right:-10px;
+	overflow: hidden;
+	border-top:1px solid #ccc;
+}
+.commodity{
+	position:relative;
+	float:left;
+	width:195px;
+	height:269px;
+	border-bottom: 1px solid #ccc;
+	border-right:1px solid #ccc;
+	pdding-left:5px;
+}
+.commodity .imgBox{
+	display:block;
+	position: relative;
+}
+.su-floor1 .su-col3{
+	float:left;
+	width:199px;
+	height:538px;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.su-floor1 .su-col3 .title{
+	position:relative;
+	width:199px;
+	height:40px;
+	font:16px/40px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+	background: #ea4821;
+	color:#fff;
+}
+.su-floor1 .su-col3 .title em{
+	display:inline-block;
+	position:absolute;
+	width:19px;
+	height:19px;
+	top:12px;
+	left:10px;
+	background:url('../img_fresh/icon.png') no-repeat -1128px 0;
+}
+.su-floor1 .su-col3 .title p{
+	width:132px;
+	margin-left:40px;
+	overflow: hidden;
+}
+.su-floor1 .su-col3 ul{
+	margin-top:-5px;
+}
+.su-floor1 .su-col3 .commodity1{
+	position:relative;
+	width:189px;
+	height:86px;
+	margin-top:10px;
+	margin-left:5px;
+	border:0;
+	padding-left:0;
+}
+.su-floor1 .su-col3 li a{
+	float:left;
+}
+.su-floor1 .su-col3 li .label{
+	position:absolute;
+	width:25px;
+	height:18px;
+	left:0px;
+	top:0;
+	line-height:18px;
+	text-align:center;
+	background: #999;
+	color:#fff;
+	z-index:100;
+}
+.su-floor1 .su-col3 li .label1{
+	background:#ffc001;
+}
+.su-floor1 .su-col3 li .triangleBefore{
+	position: absolute;
+	top: 12px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left:12px solid #999;
+}
+.su-floor1 .su-col3 li .triangleBefore1{
+	border-left: 12px solid #ffc001;
+}
+.su-floor1 .su-col3 li .triangleAfter{
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right:12px solid #999;
+}
+
+.su-floor1 .su-col3 li .triangleAfter1{
+	border-right: 12px solid #ffc001
+}
+
+.su-floor1 .su-col3 .wordBox{
+	float:left;
+	width:89px;
+	height:90px;
+	padding:10px 0 0 10px;
+}
+.su-floor1 .su-col3 .wordBox p{
+	font: 12px/14px "Microsoft Yahi";
+	height: 43px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	margin-bottom: 10px
+}
+.su-floor1 .su-col3 .wordBox span{
+	font: bold 14px/16px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+}
+.su-floor1 .su-col3 .wordBox .price-last{
+	font-size: 12px;
+}
+.su-floor1 .su-col3 li .label2{
+	background: #e94820;
+}
+.su-floor1 .su-col3 li .triangleBefore2{
+	border-left: 12px solid #e94820;
+}
+.su-floor1 .su-col3 li .triangleAfter2{
+	border-right: 12px solid #e94820;
+}
+.su-floor1 .su-col3 li .label3{
+	background: #094;
+}
+.su-floor1 .su-col3 li .triangleBefore3{
+	border-left: 12px solid #094;
+}
+.su-floor1 .su-col3 li .triangleAfter3{
+	border-right: 12px solid #094;
+}
+/***********新鲜水果楼层样式**********/
+.su-floor2{
+	position:relative;
+	width:1190px;
+	margin:10px auto;
+	font-family:"Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+}
+.su-floor2 .su-col2{
+	position:relative;
+	float:left;
+	width:399px;
+	height:539px;
+	border-right:1px solid #ccc;
+}
+.su-floor2 .su-col2 ul{
+	border-top:1px solid #ccc;
+}
+.su-floor2 .su-col2 li{
+	position:relative;
+	width:399px;
+	height:269px;
+	border-bottom:1px solid #ccc;
+	padding-left:0;
+}
+.su-floor2 .su-col2 li img{
+	float:left;
+}
+.su-floor .imgBox{
+	display:block;
+	position:relative;
+}
+.su-floor2 .imgBox2{
+	float:left;
+	width:250px;
+	height:250px;
+	margin-top:10px;
+}
+.su-floor2 .su-col2 .wordBox{
+	float:left;
+	width:131px;
+	padding-left:5px;
+	overflow:hidden;
+}
+.su-floor2 .su-col2 .name{
+	height:72px;
+	font:bold 20px/24px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+	margin:50px 0 10px;
+}
+.su-floor2 .su-col2 .desc{
+	font:12px/14px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+	height:28px;
+	display: -webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	margin-bottom:25px;
+
+}
+.su-floor2 .su-col2 .now-price{
+	font:bold 16px/20px "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+	color:#ea0028;
+}
+.su-floor2 .su-col2 .price-last{
+	font-size:12px;
+}
+.su-floor2 .su-col2 .entryBtn{
+	display: block;
+	width:120px;
+	height:30px;
+	line-height: 30px;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	margin-top:16px;
+	background: #fe0000;
+}
+.su-floor2 .su-col3{
+	float:left;
+	width:599px;
+	height:539px;
+	border-top:1px solid #ccc;
+	border-right:1px solid#ccc;
+	border-bottom:1px solid #ccc;
+	overflow:hidden;
+}
+.su-floor .su-col3 ul{
+	margin-right:-10px;
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
