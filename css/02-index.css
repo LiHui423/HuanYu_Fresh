@@ -22,8 +22,8 @@
 	width:163px;
 	line-height:38px;
 	font-size:13px;
-	left:0;
-	top:0;
+	left:1px;
+	top:-9px;
 	background:#f90;
 	padding-left:27px;
 	color:#fff !important;
@@ -84,7 +84,7 @@
 	margin-left:-450px;
 	z-index:7669;
 	position:absolute;
-	left:50%;
+	left:54%;
 	padding-left:10px;
 	height:38px;
 	line-height:38px;
@@ -149,10 +149,15 @@
 .sxs-nav .sort-list li{
 	position:relative;
 	width:180px;
-	height:8px;
+	height:80px;
 	font-size:14px;
 	padding-left:10px;
 	overflow:hidden;
+}
+.sxs-nav .sort-list li span{
+	display:inline-block;
+	vertical-align:middle;
+	zoom:1;
 }
 .sxs-nav .sort-list li .sxs-icon1{
 	position:absolute;
@@ -563,7 +568,7 @@ img.headBG.lazy-loading{
 }
 .su-floor1 .su-col2{
 	float:left;
-	width:799px;
+	width:788px;
 	height:538px;
 	border-bottom:1px solid #ccc;
 	border-right:1px solid #ccc;
@@ -577,7 +582,7 @@ img.headBG.lazy-loading{
 .commodity{
 	position:relative;
 	float:left;
-	width:195px;
+	width:198.5px;
 	height:269px;
 	border-bottom: 1px solid #ccc;
 	border-right:1px solid #ccc;
@@ -589,14 +594,14 @@ img.headBG.lazy-loading{
 }
 .su-floor1 .su-col3{
 	float:left;
-	width:199px;
+	width:210px;
 	height:538px;
 	border-bottom:1px solid #ccc;
 	border-right:1px solid #ccc;
 }
 .su-floor1 .su-col3 .title{
 	position:relative;
-	width:199px;
+	width:210px;
 	height:40px;
 	font:16px/40px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
 	background: #ea4821;
@@ -794,7 +799,7 @@ img.headBG.lazy-loading{
 	width:599px;
 	height:539px;
 	border-top:1px solid #ccc;
-	border-right:1px solid#ccc;
+	border-right:0px solid#ccc;
 	border-bottom:1px solid #ccc;
 	overflow:hidden;
 }

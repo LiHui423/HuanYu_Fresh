@@ -164,10 +164,14 @@
 }
 .ng-header, .ng-header .ng-header-con .wrapper, .ng-header-con {
     position: relative;
+    display: -webkit-inline-box;
+    margin:auto 45px;
 }
 .wrapper {
     width: 1190px;
     clear: both;
+    text-align:center;
+    width:25%;
 }
 .ng-channel-header .ng-header-con .ng-logo-box {
     height: 100px;
@@ -300,7 +304,7 @@
     padding:0;
     font-size:14px;
     font-family: 'Microsoft Yahei';
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing:2px;
     text-indent:2px;
     color:#fff;
@@ -346,18 +350,6 @@
     left:50%;
     z-index:7675;
     font-family:"Microsoft Yahei";
-}
-.ng-all-hook{
-    width:163px;
-    line-height:38px;
-    font-size:13px;
-    left:0;
-    top:0;
-    background:#f90;
-    padding-left:27px;
-    color:#fff !important;
-    font-weight:400;
-    text-decoration:none;
 }
 .ng-all-hook,.ng-nab-bar{
     display:block;
@@ -406,45 +398,7 @@
     width:175px;
     padding:0 10px 0 8px;
 }
-.ng-nav-bar-chanel .ng-nav-index{
-    width:785px;
-}
-.ng-nav-index{
-    margin-left:-450px;
-    z-index:7669;
-    position:absolute;
-    left:50%;
-    padding-left:10px;
-    height:38px;
-    line-height:38px;
-    overflow:hidden;
-    font-family:'Microsoft Yahei';
-}
-.ng-nav-index ul.ng-nav li{
-    float:left;
-    display:block;
-    position:relative;
-    height:38px;
-    font-weight:700;
-    padding:0 12px 0 13px;
-}
-.ng-nav-index ul.ng-nav li a{
-    position:relative;
-    float: left;
-    color:#333;
-    font-size:15px;
-    text-decoration:none;
-}
-.ng-nav-index ul.ng-nav li span{
-    position:absolute;
-    width:25px;
-    height:8px;
-    bottom:-8px;
-    left:50%;
-    margin-left:-12px;
-    background:url('../img_fresh/newbg.png') -37px 0;
-    transition:all .5s;
-}
+
 
 
 
