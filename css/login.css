@@ -1,0 +1,364 @@
+.header{
+    width:970px;
+    height:100px;
+    margin:0 auto;
+}
+.header .logo{
+    float:left;
+    width:189px;
+    height:100%;
+    background:url('../img_fresh/snlogo.png') center no-repeat;
+}
+a:hover{
+    color:#f60;
+    text-decoration:underline;
+}
+.header .bind-phone{
+    float:left;
+    color:#333;
+    background:#fefff1;
+    border:1px solid #fecd66;
+    line-height:16px;
+    padding:4px 6px;
+}
+.header .advise{
+    float:right;
+    margin-top:8px;
+    text-decoration:none;
+}
+.header .advise i{
+    float:left;
+    width:18px;
+    height:18px;
+    margin-right:10px;
+    font-size:12px;
+    font-family:simsun;
+    background:url('../img_fresh/login/sprite.png') -67px -27px no-repeat;
+}
+.main{
+    height:570px;
+    min-width:970px;
+}
+.main .login-c{
+    width:970px;
+    height:100%;
+    margin:0 auto;
+}
+.main .login-c .single-link{
+    width:570px;
+    height:100%;
+    float:left;
+}
+.main .login-c .login-form{
+    float:right;
+}
+.login-form{
+    position:relative;
+    width:360px;
+    margin-top:50px;
+    background:#fff;
+    box-shadow:0 0 2px #ececec;
+    font-family:"Microsoft Yahei";
+}
+.login-form .login-tab{
+    height:50px;
+    line-height:20px;
+    font-size:16px;
+    overflow:hidden;
+    border-bottom:1px solid #eee;
+}
+.login-form .login-tab .tab-item.on{
+    color:#f60;
+}
+.login-form .login-tab .tab-item{
+    position:relative;
+    float:left;
+    height:100%;
+    width: 50%;
+    text-decoration:none;
+    text-align:center;
+}
+.login-form .login-tab .tab-item span{
+    display:block;
+    border-right:1px solid #eee;
+    margin-top:15px;
+}
+.login-form .login-tab .tab-item.on i{
+    display:block;
+}
+.login-form .login-tab .tab-item i{
+    display:none;
+    position:absolute;
+    width:70px;
+    height:4px;
+    background:#f60;
+    bottom:-1px;
+    left:50%;
+    margin-left:-35px;
+}
+.login-form .login-tab .tab-item.on,  .login-form .login-tab .tab-item:hover{
+    color:#f60;
+}
+.login-form .login-tab .tab-item span{
+    display:block;
+    border-right:1px solid #eee;
+    margin-top:15px;
+}
+.login-form .pc-login .username-login{
+    padding:0 24px;
+}
+.login-form .pc-login .login-warning{
+    padding:2px 10px;
+    font-size:12px;
+    background:ivory;
+    border:1px solid #fc6;
+    margin:8px 0
+}
+.login-form .pc-login .login-warning i{
+    float:left;
+    width:16px;
+    height:16px;
+    margin:1px 8px 0 0;
+    background:url('../img_fresh/login/sprite.png') -153px -27px no-repeat;
+}
+.login-form .pc-login .login-error{
+    padding:2px 10px;
+    font-size:12px;
+    color:#323232;
+    background:#fff0f0;
+    border:1px solid #ff3c3c;
+    margin:8px 0;
+}
+.login-form .pc-login .login-error i{
+    float:left;
+    width:16px;
+    height:16px;
+    margin:1px 8px 0 0;
+    background:url('../img_fresh/login/sprite.png') -140px -108px no-repeat;
+}
+.login-form .pc-login .login-error{
+    font-size:12px;
+    color:#323232;
+}
+.login-form .pc-login .username-box{
+    position:relative;
+    clear:both;
+    margin-bottom:20px;
+}
+.login-form .pc-login .input-box{
+    position:relative;
+    border:1px solid #ddd;
+    color:#999;
+    padding:0 32px 0 36px;
+    height:36px;
+    overflow:hidden;
+}
+.login-form .pc-login .input-box input{
+    display:block;
+    width:100%;
+    height:100%;
+    line-height:36px;
+    padding:0 32px 0 36px;
+    border:0;
+    font-size:14px;
+}
+.login-form .pc-login .input-box label{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding-left:36px;
+    line-height:36px;
+    font-size:14px;
+    font-weight:normal;
+    color:#ccc;
+    cursor:text;
+    background:#fff;
+}
+.login-form .pc-login .input-box .icon{
+    width:36px;
+    height:36px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.login-form .pc-login .input-box .username-icon{
+    background:url('../img_fresh/login/sprite.png') -123px -67px no-repeat;
+}
+.login-form .pc-login .input-box .clear{
+    display:none;
+    width:32px;
+    height:36px;
+    position:absolute;
+    top:0;
+    right:0;
+    background:url('../img_fresh/login/sprite.png') -82px -108px no-repeat;
+    cursor:pointer;
+}
+.login-form .pc-login .username-box .email-list{
+    position:absolute;
+    top:39px;
+    left:0;
+    width:310px;
+}
+.email-list{
+    border:1px solid #bbb;
+    background:#fff;
+    z-index:9999;
+}
+.login-form .pc-login .password-box{
+    margin-bottom:20px;
+}
+.login-form .pc-login .input-box .password-icon{
+    background:url('../img_fresh/login/sprite.png') 0 -108px no-repeat;
+}
+.login-form .pc-login .username-login .verify-box{
+    margin-bottom:0;
+}
+.login-form .pc-login .verify-box .input-box{
+    float:left;
+    width:102px;
+}
+.login-form .pc-login .input-box .verify-icon{
+    background:url('../img_fresh/login/sprite.png') -41px -108px no-repeat;
+}
+.login-form .pc-login input-box .ok{
+    position:absolute;
+    width:16px;
+    height:16px;
+    top:10px;
+    right:8px;
+    background:url('../img_fresh/login/sprite.png') -111px -27px no-repeat;
+}
+.login-form .pc-login .input-box .error{
+    position:absolute;
+    width:16px;
+    height:16px;
+    top:10px;
+    right:8px;
+    background:url('../img_fresh/login/sprite.png') -140px -108px no-repeat;
+}
+.login-form .pc-login .verify-box .verify-code{
+    float:left;
+    width:138px;
+    border:1px solid #ddd;
+    line-height:36px;
+    border-left:0 none;
+}
+.login-form .pc-login .verify-box .verify-code img{
+    float:left;
+    width:70px;
+    height:30px;
+    margin:3px 9px;
+}
+.login-form .pc-login .siller-box{
+    margin-top:60px;
+}
+
+.dt_parent{
+    overflow:visible;
+    position:relative;
+    zoom:1;
+    letter-spacing: 0!important;
+}
+.dt_parent .float{
+    width:312px;
+}
+.dt_parent.float .dt_child_content{
+    left:0;
+}
+.dt_parent .dt_child_content, .dt_parent .dt_child_content_knob, .dt_parent .dt_child_content_knob_complete, .dt_parent .dt_child_content_knob_error, .dt_parent .dt_child_content_knob_move, .dt_parent .dt_child_content_knob_move_back, .dt_parent .dt_slide_bar, .dt_parent .dt_slide_bar_back, .dt_parent .dt_slide_bar_error{
+    background-image: url('../img_fresh/login/slide-new.png');
+    background-repeat:no-repeat;
+}
+.dt_parent .dt_child_content{
+    height:38px;
+    width:312px;
+    background-position:-13px -11px;
+    position:relative;
+    overflow:visible;
+}
+div.dt_parent.dt_slide_bar{
+    width:0;
+}
+.dt_parent .dt_slide_bar{
+    background-position: -13px -74px;
+}
+.dt_parent .dt_slide_bar, .dt_parent .dt_slide_bar_back, .dt_parent .dt_slide_bar_error{
+    cursor: default;
+    position: absolute;
+    left: 0;
+    height: 38px;
+    line-height: 38px;
+    width: 0
+}
+.dt_parent .dt_child_content_knob{
+    background-position: -28px -200px;
+}
+.dt_parent .dt_child_content_knob, .dt_parent .dt_child_content_knob_complete{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -moz-box-shadow: none;
+    z-index: 399;
+    height: 38px;
+    width: 38px;
+}
+.dt_parent .dt_notice{
+    cursor: default;
+    position: absolute;
+    left: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 312px;
+    display: inline-block;
+    animation: dt_notice 3s infinite;
+    -webkit-animation: dt_notice 3s infinite;
+    -moz-animation: dt_notice 3s infinite;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #999), color-stop(.4, #999), color-stop(.5, #fff), color-stop(.6, #999), color-stop(1, #999));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-size-adjust: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
