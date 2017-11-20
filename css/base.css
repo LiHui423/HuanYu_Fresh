@@ -32,3 +32,6 @@ ul,li{
 .root1200 .g-channel-nav, .root1200 .ng-fix-bar, .root1200 .ng-footer .ng-new-pro, .root1200 .ng-footer .ng-ser-box, .root1200 .ng-header, .root1200 .ng-header .ng-header-box, .root1200 .ng-header-con, .root1200 .ng-nav-bar, .root1200 .ng-s-footer, .root1200 .ng-toolbar, .root1200 .wrapper{
     min-width: 1190px;
 }
+em,i{
+    font-style:normal;
+}

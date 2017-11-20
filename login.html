@@ -37,13 +37,13 @@
                     </a>
                 </div>
                 <div class="pc-login" style="display:block;">
-                    <div class="username-login">
+                    <div class="username-login" style="display:none">
                         <div>
-                            <div class="login-warning" style="display:block;">
+                            <div class="login-warning" style="display:none;">
                                 <i></i>
                                 <span>公共场所不建议自动登陆</span>
                             </div>
-                            <div class="login-error" style="display:block;">
+                            <div class="login-error" style="display:none;">
                                 <i></i>
                                 <span></span>
                             </div>
@@ -67,7 +67,7 @@
                                 <i class="clear"></i>
                             </div>
                         </div>
-                        <div class="verify-box clearfix showErrorVerifyCodeDiv" style="display:block;">
+                        <div class="verify-box clearfix showErrorVerifyCodeDiv" style="display:none;">
                             <div class="input-box">
                                 <input type="text" class="validate" maxlength="4">
                                 <label>验证码</label>
@@ -82,7 +82,7 @@
                             </a>
                         </div>
                         <table></table>
-                        <div id="Logon_index_denglu039" class="siller-box sillerVerifyCode" style="display:block;margin-bottom:20px;">
+                        <div id="Logon_index_denglu039" class="siller-box sillerVerifyCode" style="display:none;margin-bottom:20px;">
                           <div id="siller1" class="dt_parent float" style="display:block">
                               <div class="dt_child_content">
                                   <div class="dt_parent dt_slide_bar" style="width:0px;"></div>
@@ -91,7 +91,57 @@
                               </div>
                           </div>
                         </div>
+                        <div class="login-help clearfix">
+                            <a href="#" class="login-switch">
+                                <i></i>
+                                短信验证码登陆
+                            </a>
+                            <a href="#" id="FORGET_PWD" class="forget-password">忘记密码</a>
+                        </div>
+                        <a href="#" id="submit" class="login-submit">登 陆</a>
+                    </div>
 
+                    <div class="scan-login" style="display:block;">
+                        <div class="scan-box clearfix" style="display:block">
+                            <div class="qrcode edge" style="width:141px;height:141px;margin:0 auto;transition:.3s all;position:relative;">
+                                <img style="display:block;width:100%;height:100%" class="qrCodesId">
+                                <span style="position:absolute;top:-30px;left:0;padding-left:8px;display:none">
+                                今日首次扫码获
+                                <em style="color:#f60;">10</em>
+                                云钻
+                            </span>
+                            </div>
+                            <div class="phone-scan" style="display:none"></div>
+                        </div>
+                        <p class="open-app">
+                            <i></i>
+                            打开
+                            <a href="#" id="DOWNLOAD_APP">
+                                <em>苏宁易购APP</em>
+                            </a>
+                            扫码登陆
+                        </p>
+                    </div>
+                    <div class="free-reg">
+                        <a href="#" id="FREE_TO_REG">免费注册  有惊喜></a>
+                    </div>
+                    <div class="bind-login">
+                        <span class="title">使用以下账号登陆</span>
+                        <div class="common clearfix">
+                            <a href="#" class="qq">
+                                <i></i>
+                                QQ
+                            </a>
+                            <a href="#" class="weixin">
+                                <i></i>
+                                微信
+                            </a>
+                            <a href="#" class="yifubao">
+                                <i></i>
+                                易付宝
+                            </a>
+                            <a href="#">门店会员卡</a>
+                        </div>
                     </div>
                 </div>
             </div>

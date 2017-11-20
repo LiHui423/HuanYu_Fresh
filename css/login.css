@@ -144,6 +144,7 @@ a:hover{
     position:relative;
     clear:both;
     margin-bottom:20px;
+    margin-top:40px;
 }
 .login-form .pc-login .input-box{
     position:relative;
@@ -253,7 +254,7 @@ a:hover{
     margin:3px 9px;
 }
 .login-form .pc-login .siller-box{
-    margin-top:60px;
+    margin-top:20px;
 }
 
 .dt_parent{
@@ -329,9 +330,154 @@ div.dt_parent.dt_slide_bar{
     -webkit-text-fill-color: transparent;
     -webkit-text-size-adjust: none;
 }
-
-
-
+.login-form .pc-login .username-login .login-help{
+    padding-top:10px;
+}
+.login-form .pc-login .login-help{
+    line-height:35px;
+    height:35px;
+}
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0px;
+    clear:both;
+    visibility:hidden;
+}
+.login-form .pc-login .login-help .login-switch{
+    float:left;
+    text-decoration:none;
+}
+.login-form .pc-login .username-login .login-help i{
+    background:url('../img_fresh/login/sprite.png') 0 -149px no-repeat;
+}
+.login-form .pc-login .login-help .login-switch i{
+    display:inline-block;
+    width:13px;
+    height:16px;
+    margin-right:5px;
+}
+.login-form .pc-login .login-help .forget-password{
+    float:right;
+}
+.login-form .pc-login .login-submit{
+    display:block;
+    width:310px;
+    line-height:40px;
+    margin:0 auto;
+    background:#f60;
+    border-radius:2px;
+    font-size:20px;
+    font-weight:700;
+    text-align:center;
+    color:#fff;
+}
+.login-form .pc-login .phone-login{
+    display:block;
+    padding:0 24px;
+}
+.login-form .free-reg{
+    text-align:center;
+    margin:12px 0 35px;
+}
+.login-form .bind-login{
+    position:relative;
+    width:310px;
+    margin:0 auto;
+    border-top:1px solid #ddd;
+    padding:19px 0 17px;
+}
+.login-form .bind-login .title{
+    position:absolute;
+    top:-9px;
+    left:50%;
+    margin-left:-64px;
+    color:#999;
+    width:128px;
+    background:#fff;
+    text-align:center;
+}
+.login-form .bind-login .common .qq{
+    padding-left:0;
+}
+.login-form .bind-login .common a{
+    float:left;
+    padding:0 7px;
+    border-right:1px solid #dedcd5;
+    line-height:16px;
+}
+.login-form .bind-login .common .qq i{
+    background:url('../img_fresh/login/sprite.png') -90px -27px no-repeat;
+}
+.login-form .bind-login .common a i{
+    float:left;
+    width:16px;
+    height:16px;
+    margin-right:5px;
+}
+.login-form .bind-login .common .weixin i{
+    background:url('../img_fresh/login/sprite.png') -161px -108px no-repeat;
+}
+.login-form .bind-login .common .yifubao i{
+    background:url('../img_fresh/login/sprite.png') -119px -108px no-repeat;
+}
+.login-form .scan-login{
+    padding-top:30px;
+    text-align:center;
+    position:relative;
+}
+.login-form .scan-login .scan-box{
+    height:156px;
+    padding:20px 34px 0;
+    position:relative;
+    margin-bottom:17px;
+}
+div .qrcode{
+    width:141px;
+    height:141px;
+    margin:0 auto;
+    transition:.3s all;
+    position:relative;
+}
+.login-form .scan-login .scan-box .qrcode {
+    display: block;
+    width: 141px;
+    height: 141px;
+    margin: 0 auto;
+    transition: .3s all;
+}
+.login-form .scan-login{
+    text-align:center;
+}
+div.phone-scan{
+    display:block;
+}
+.login-form .scan-login .scan-box .phone-scan{
+    position:absolute;
+    top:-20px;
+    right:34px;
+    width:133px;
+    height:200px;
+    background:url('../img_fresh/login/scan.png') no-repeat;
+}
+.login-form .scan-login .open-app{
+    margin-bottom:7px;
+    text-align:center;
+}
+.login-form .scan-login .open-app i{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin-right:10px;
+    background:url('../img_fresh/login/sprite.png') -164px -67px no-repeat;
+}
+.login-form .scan-login .open-app em{
+    color:#f60;
+}
+.login-form .free-reg{
+    text-align:center;
+    margin:12px 0 35px;
+}
 
 
 
