@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="header clearfix">
+        <a href="#" class="login">我已注册，马上登陆</a>
+        <a href="#" class="logo"></a>
+        <div class="logo-txt">欢迎注册</div>
+    </div>
+    <div class="main">
+        <form id="enterReg_form">
+            <div class="reg-form">
+                <div class="gift-pkg">
+                    <i></i>
+                    注册领
+                    <em>199</em>
+                    元大礼包
+                </div>
+                <div class="phone-field">
+                    <div class="input-box clearfix">
+                        <label class="title">手机号码</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="mobileAlias" maxlength="11">
+                            <label class="placeholder" style="display:block;">请输入手机号</label>
+                            <i class="ok" style="display:none"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg-field">
+                    <div class="input-box clearfix">
+                        <label class="title">手机验证码</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="smsCode" maxlength="6">
+                            <label class="placeholder" style="display:block">请输入手机验证码</label>
+                            <i class="ok" style="display:none;"></i>
+                        </div>
+                        <a href="#" id="sendSmsCode" class="send-msg">获取短信验证码</a>
+                    </div>
+                </div>
+                <div class="password-field">
+                    <div class="input-box clearfix" style="margin-bottom:0;">
+                        <label class="title">设置密码</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="setPsw" name="setPsw" maxlength="20" class="encrypt">
+                            <i class="eye eye-plain"></i>
+                            <input type="text" id="setPswPlain" name="setPswPlain" maxlength="20" class="plain">
+                            <i class="eye eye-encrypt"></i>
+                            <i class="ok" style="display: none;"></i>
+                            <label class="placeholder" style="display: block;">请输入密码</label>
+                        </div>
+                    </div>
+                    <div style="height:50px;">
+                        <div id="setPswTip" class="error-msg hide" style="margin: 0px; display: none;"></div>
+                        <div class="suggestion hide" style="display: none;"><em>6-20个字符，由字母，数字和符号的两种以上组合。</em><a id="pswSuggestion" href="javascript:void(0)">密码设置建议</a></div>
+                        <div id="setPsw_rank" class="security-level clearfix hide">
+                            <span>安全程度：</span>
+                            <span class="level level1">低</span>
+                            <span class="level level2">中</span>
+                            <span class="level level3">高</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <input type="checkbox" id="protocol" class="accept-items" >
+                    <a href="#">《苏宁易购会员章程》</a>
+                    <a href="#">《易付宝协议》</a>
+                    及
+                    <a href="#">《苏宁广告联盟在线协议》</a>
+                </div>
+                <div id="protocolTip" class="pls-accept-items hide">您必须同意苏宁服务条款后，才能提交注册</div>
+                <a href="#" id="save" class="submit-btn">提交注册</a>
+                <a href="#" class="enter-reg" >
+                    <i></i>企业用户注册&gt;
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
