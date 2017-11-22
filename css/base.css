@@ -15,6 +15,9 @@ ul, li, p, h3, h5, em, b, i, span, a {
 a{
     text-decoration:none;
 }
+a:hover{
+    color:#f60;
+}
 img{
     border:0;
 }

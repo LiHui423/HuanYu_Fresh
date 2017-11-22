@@ -134,7 +134,8 @@
     font-weight: 400;
 }
 .ng-toolbar .ng-bar-node-mini-cart .total-num-bg-box, .ng-toolbar .ng-bar-node-mini-cart .total-num-bg-box em, .total-num-bg-box i {
-    background: #fa0;
+    /*background: #fa0;*/
+
 }
 .ng-header{
     min-width:1190px;
