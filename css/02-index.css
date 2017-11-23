@@ -818,8 +818,9 @@ div.ECode-floatBar{
 	margin-right:610px;
 	bottom:0px;
 	margin-bottom:100px;
-	display:block;
+	display:none;
 }
+
 .float-bar{
 	width:52px;
 }
