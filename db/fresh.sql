@@ -1,7 +1,7 @@
 SET NAMES UTF8;
 DROP DATABASE IF EXISTS fresh;
 CREATE DATABASE fresh CHARSET=UTF8;
-USE fresh;
+
 
 /**用户信息**/
 CREATE TABLE fresh_user(
@@ -82,6 +82,43 @@ CREATE TABLE fresh_index_product(
   seq_new_arrival TINYINT,
   seq_top_sale TINYINT
 );
+/*生鲜商品所属类别家族*/
+CREATE TABLE fresh_goods_family(
+  fid INT PRIMARY KEY AUTO_INCREMENT,
+  fname VARCHAR(32)
+);
+/*生鲜商品列表*/
+CREATE TABLE fresh_goods(
+  gid INT PRIMARY KEY AUTO_INCREMENT,
+  family_id INT,              #所属类别家族编号
+  title VARCHAR(128),         #主标题
+  subtitle VARCHAR(128),      #副标题
+  price_normal DECIMAL(10,2), #商品价格
+  price_onsale DECIMAL(10,2), #促销价格l
+  promise VARCHAR(64),        #服务承诺
+  mea VARCHAR(64),            #计量单位
+
+  gname VARCHAR(32),          #商品名称
+  details VARCHAR(1024),      #产品详细说明
+
+  shelf_time BIGINT,          #上架时间
+  sold_count INT,             #已售出的数量
+  is_onsale BOOLEAN           #是否促销中
+  );
+
+/*生鲜商品图片*/
+CREATE TABLE fresh_goods_pic(
+  pid INT PRIMARY KEY AUTO_INCREMENT,
+  goods_id INT,              #生鲜商品编号
+  sm VARCHAR(128),            #小图片路径
+  md VARCHAR(128),            #中图片路径
+  lg VARCHAR(128)             #大图片路径
+);
+
+
+
+
+
 
 /*******************/
 /******数据导入******/
@@ -98,6 +135,18 @@ INSERT INTO fresh_user VALUES
 INSERT INTO fresh_index_carousel VALUES
 (NULL, 'img_fresh/carousel/151090204408737457.jpg','轮播广告商品1','product_details.html?lid=28'),
 (NULL, 'img_fresh/carousel/151091065335811592.jpg','轮播广告商品2','product_details.html?lid=19'),
-(NULL, 'img_fresh/carousel/151091085627436074.jpg','轮播广告商品3','lookforward.html')
+(NULL, 'img_fresh/carousel/151091085627436074.jpg','轮播广告商品3','lookforward.html');
+
+
+/******************生鲜类别家族*****************/
+INSERT INTO fresh_goods_family VALUES
+(NULL,'新鲜水果fruit'),
+(NULL,'海鲜水产seafood'),
+(NULL,'精选肉类meat'),
+(NULL,'家禽蛋类poultry&eggs'),
+(NULL,'快手料理fastfood');
+
+/**********生鲜具体商品************/
+
 
 

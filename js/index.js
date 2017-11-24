@@ -8,12 +8,44 @@ function getTotalTop(elem){
     return sum;
 }
 (()=>{
-    /*异步加载页头和页尾*/
+    $.ajax({
+        url:'data/product/index_f.php',
+        type:'GET',
+        success:function(data){
+            console.log(data);
+            var adHtml = '';
+            var indicatorHtml = '';
+            for (var i = 0; i < data.carouselItems.length; i++) {
+                var c = data.carouselItems[i];
+                adHtml += `
+                <li ${i > 0 ? 'style="display:none;"' : ''}>
+                    <a href="${c.href}"><img src="${c.img}"></a>
+                </li>
+                `;
+                indicatorHtml += `
+                    <li class="${i === 0 ? 'current' : ''}"><em>${i + 1}</em></li>
+                `;
+            }
+            $(".banner-wrapper .banner").html(adHtml);
+            $(".banner-nav-wrapper .banner-nav .page-item").html(indicatorHtml);
+            $(".banner-wrapper").ckSlide({
+                autoPlay: true,//默认为不自动播放，需要时请以此设置
+                dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+                interval: 3000//默认间隔2000毫秒
+            })
+
+        },
+        error:function(){
+            console.log("网络故障");
+        }
+
+    });
+/************************异步加载页头和页尾***********************/
     $('.header').load('header.html',function(){
         $.ajax({
             url:'data/user/session_data.php',
             success:function(result){
-                console.log(result);
+                //console.log(result);
                 if(result.uname){
                     $('#reg-bar-node').html('<div>&nbsp;欢迎:'+result.uname+'<a href="logout.html" title="退出登陆">退出</a><b>|</b></div><div><a href="uc_basic.html" title="用户中心">用户中心</a></div>');
                     $('[href="logout.html"]').click(function(e){
@@ -40,9 +72,40 @@ function getTotalTop(elem){
     });
     $('.footer').load('footer.html');
 
+/*******************加载广告轮播*****************/
+    /*$.ajax({
+        url:'../data/product/index_f.php',
+        type:"GET",
+        data:{},
+        success:function(data){
+            console.log(data);
+            var adHtml = '';
+            var indicatorHtml = '';
+            for (var i = 0; i < data.carouselItems.length; i++) {
+                var c = data.carouselItems[i];
+                adHtml += `
+                <li ${i > 0 ? 'style="display:none;"' : ''}>
+                    <a href="${c.href}"><img src="${c.img}"></a>
+                </li>
+                `;
+                indicatorHtml += `
+                    <li class="${i === 0 ? 'current' : ''}"><em>${i + 1}</em></li>
+                `;
+            }
+            $(".banner-wrapper .banner").html(adHtml);
+            $(".banner-nav-wrapper .banner-nav .page-item").html(indicatorHtml);
+            $(".banner-wrapper").ckSlide({
+                autoPlay: true,//默认为不自动播放，需要时请以此设置
+                dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+                interval: 3000//默认间隔2000毫秒
+            })
 
+        }
+    });
 
-//加载左侧电梯
+*/
+
+/*****************加载左侧电梯***********************/
     //获得id为f1的元素距页面顶部的总距离totalTop
     var f1TotalTop=getTotalTop(document.getElementById("f1"));
     //查找id为lift的div保存在变量lift中
