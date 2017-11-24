@@ -8,39 +8,7 @@ function getTotalTop(elem){
     return sum;
 }
 (()=>{
-    $.ajax({
-        url:'data/product/index_f.php',
-        type:'GET',
-        success:function(data){
-            console.log(data);
-            var adHtml = '';
-            var indicatorHtml = '';
-            for (var i = 0; i < data.carouselItems.length; i++) {
-                var c = data.carouselItems[i];
-                adHtml += `
-                <li ${i > 0 ? 'style="display:none;"' : ''}>
-                    <a href="${c.href}"><img src="${c.img}"></a>
-                </li>
-                `;
-                indicatorHtml += `
-                    <li class="${i === 0 ? 'current' : ''}"><em>${i + 1}</em></li>
-                `;
-            }
-            $(".banner-wrapper .banner").html(adHtml);
-            $(".banner-nav-wrapper .banner-nav .page-item").html(indicatorHtml);
-            $(".banner-wrapper").ckSlide({
-                autoPlay: true,//默认为不自动播放，需要时请以此设置
-                dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
-                interval: 3000//默认间隔2000毫秒
-            })
-
-        },
-        error:function(){
-            console.log("网络故障");
-        }
-
-    });
-/************************异步加载页头和页尾***********************/
+    /***************异步加载头部和尾部***************/
     $('.header').load('header.html',function(){
         $.ajax({
             url:'data/user/session_data.php',
@@ -73,10 +41,9 @@ function getTotalTop(elem){
     $('.footer').load('footer.html');
 
 /*******************加载广告轮播*****************/
-    /*$.ajax({
-        url:'../data/product/index_f.php',
+    $.ajax({
+        url:'data/product/index.php',
         type:"GET",
-        data:{},
         success:function(data){
             console.log(data);
             var adHtml = '';
@@ -84,7 +51,7 @@ function getTotalTop(elem){
             for (var i = 0; i < data.carouselItems.length; i++) {
                 var c = data.carouselItems[i];
                 adHtml += `
-                <li ${i > 0 ? 'style="display:none;"' : ''}>
+                <li ${i>0?'style="display:none;"':''}>
                     <a href="${c.href}"><img src="${c.img}"></a>
                 </li>
                 `;
@@ -103,7 +70,7 @@ function getTotalTop(elem){
         }
     });
 
-*/
+
 
 /*****************加载左侧电梯***********************/
     //获得id为f1的元素距页面顶部的总距离totalTop
