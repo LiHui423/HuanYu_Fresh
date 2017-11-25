@@ -70,6 +70,19 @@ function getTotalTop(elem){
         })
     });
     $('.footer').load('footer.html');
+/*********************加载楼层内容************************/
+    $.ajax({
+        url:'data/product/index.php',
+        type:'GET',
+        success:function(data){
+            console.log(data);
+        },
+        error:function(){
+            console.log("网络故障请检查");
+        }
+    });
+
+
 /*****************加载左侧电梯***********************/
     //获得id为f1的元素距页面顶部的总距离totalTop
     var f1TotalTop=getTotalTop(document.getElementById("f1"));
