@@ -1,3 +1,34 @@
+/************加载广告轮播*************/
+$.ajax({
+    url:'data/product/index.php',
+    type:"GET",
+    success:function(data){
+        //console.log(data.carouselItems);
+        var adHtml = '';
+        var indicatorHtml = '';
+        for (var i = 0; i < data.carouselItems.length; i++) {
+            var c = data.carouselItems[i];
+            adHtml += `
+					<li ${i>0?'style="display:none;"':''}>
+						<a href="${c.href}"><img src="${c.img}"></a>
+					</li>
+					`;
+            indicatorHtml += `
+						<a class="${i === 0 ? 'current' : ''}" >
+							<em></em>
+						</a>
+					`;
+        }
+        $(".banner-wrapper .banner").html(adHtml);
+        $(".banner-nav").html(indicatorHtml);
+        $(".banner-wrapper").ckSlide({
+            autoPlay: true,//默认为不自动播放，需要时请以此设置
+            dir: 'y',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+            interval: 2000//默认间隔2000毫秒
+        })
+    }
+});
+
 
 function getTotalTop(elem){
     var sum=0;
@@ -39,39 +70,6 @@ function getTotalTop(elem){
         })
     });
     $('.footer').load('footer.html');
-
-/*******************加载广告轮播*****************/
-    $.ajax({
-        url:'data/product/index.php',
-        type:"GET",
-        success:function(data){
-            console.log(data);
-            var adHtml = '';
-            var indicatorHtml = '';
-            for (var i = 0; i < data.carouselItems.length; i++) {
-                var c = data.carouselItems[i];
-                adHtml += `
-                <li ${i>0?'style="display:none;"':''}>
-                    <a href="${c.href}"><img src="${c.img}"></a>
-                </li>
-                `;
-                indicatorHtml += `
-                    <li class="${i === 0 ? 'current' : ''}"><em>${i + 1}</em></li>
-                `;
-            }
-            $(".banner-wrapper .banner").html(adHtml);
-            $(".banner-nav-wrapper .banner-nav .page-item").html(indicatorHtml);
-            $(".banner-wrapper").ckSlide({
-                autoPlay: true,//默认为不自动播放，需要时请以此设置
-                dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
-                interval: 3000//默认间隔2000毫秒
-            })
-
-        }
-    });
-
-
-
 /*****************加载左侧电梯***********************/
     //获得id为f1的元素距页面顶部的总距离totalTop
     var f1TotalTop=getTotalTop(document.getElementById("f1"));
@@ -128,4 +126,14 @@ function getTotalTop(elem){
             },500);
         }
     }
+    /*********全部商品分类鼠标悬停效果************/
+    $(".ng-sort").mouseover(function() {
+        $(".ng-sort-list-box").css("display", "block");
+    });
+    $(".ng-sort").mouseout(function(){
+        $(".ng-sort-list-box").css("display","none");
+    });
+
+    /****************头部箭头鼠标悬停效果***********************/
+
 })();

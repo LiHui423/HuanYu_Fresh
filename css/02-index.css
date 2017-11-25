@@ -47,8 +47,12 @@
 	font-weight: 700
 }
 .ng-sort-list-box{
+	position:absolute;
 	display:none;
-	top:38px;
+	top:31px;
+	transition:all 3s linear;
+	height:0px;
+	opacity:0.8;
 }
 .ng-sort-list-box .nav-cover{
 	height:440px;
@@ -220,9 +224,10 @@
 	position:absolute;
 	top:0;
 	left:0;
-	width:100%;
+	width:1903px;
 	height:400px;
 	text-align:center;
+	display:block;
 }
 .banner-wrapper .banner{
 	width:100%;
@@ -258,30 +263,32 @@
 	top:159px;
 	width:37px;
 	height:60px;
+	line-height:60px;
 	background-color:#000;
 	text-align:center;
 	opacity:0.2;
 }
 .banner-wrapper .left-point i{
-	background-position: -965px 0
+	background:url('../img_fresh/icon.png') -965px 0;
 }
 .banner-wrapper .point i{
 	display: inline-block;
 	width:21px;
 	height:40px;
 	vertical-align:middle;
+	margin-top:2px;
 }
 .banner-wrapper .right-point{
 	right:50%;
 	margin-right:-385px;
 }
 .banner-wrapper .right-point i{
-	background-position: -989px 0;
+	background:url('../img_fresh/icon.png') -989px 0;
 }
 .banner-wrapper .banner-nav-wrapper{
 	position:absolute;
 	top:375px;
-	width:100%;
+	width:1903px;
 	height:5px;
 	text-align:center;
 }
@@ -297,10 +304,12 @@
 	display: inline-block;
 	margin-right:8px;
 	margin-top:2px;
+	margin-bottom:1px;
 	width:10px;
 	height:10px;
 	border-radius:50%;
 	opacity:0.6;
+	background:#BFB9B8;
 }
 .banner-wrapper .banner-nav-wrapper .banner-nav a.current{
 	background: #1b212f;

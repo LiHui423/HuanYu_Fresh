@@ -368,10 +368,10 @@
 .ng-all-hook span{
     font-weight: 700
 }
-.ng-sort-list-box{
+/*.ng-sort-list-box{
     display:none;
     top:38px;
-}
+}*/
 .ng-sort-list-box .nav-cover{
     height:440px;
     position:absolute;
