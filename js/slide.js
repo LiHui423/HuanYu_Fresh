@@ -89,7 +89,7 @@
             })
             // dir  移动方向参数
             switch(opts.dir){
-                case "x":
+                /*case "x":
                     opts['width'] = $(this).width();
                     slidewrap.css({
                         'width':count * opts['width']
@@ -102,7 +102,7 @@
 					//.wrap()包裹页面已经定义的.ck-slide-wrapper以及子元素
                     slidewrap.wrap('<div class="banner-dir"></div>');
                     slide.show();
-                    break;
+                    break;*/
 				case "y":  //添加垂直移动参数
                     opts['height'] = $(this).height();
                     slidewrap.css({
@@ -111,7 +111,7 @@
                     slide.css({
                         'float':'left',
                         'position':'relative',
-						'margin-top':'0px'
+						'margin-top':'0px;'
                     });
                     slidewrap.wrap('<div class="banner-dir"></div>');
                     slide.show();

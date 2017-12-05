@@ -221,15 +221,15 @@
 	background-position: -1102px 0
 }
 .banner-wrapper{
-	position:absolute;
-	top:0;
-	left:0;
-	width:1903px;
+	position:relative;
+	margin-top:-400px;
 	height:400px;
 	text-align:center;
 	display:block;
 }
 .banner-wrapper .banner{
+	position:absolute;
+	margin-top:0;
 	width:100%;
 	height:400px;
 }
@@ -287,10 +287,8 @@
 }
 .banner-wrapper .banner-nav-wrapper{
 	position:absolute;
-	top:375px;
-	width:1903px;
-	height:5px;
-	text-align:center;
+	left:50%;
+	bottom:12px;
 }
 .banner-wrapper .banner-nav-wrapper .banner-nav{
 	position:relative;
@@ -304,7 +302,7 @@
 	display: inline-block;
 	margin-right:8px;
 	margin-top:2px;
-	margin-bottom:1px;
+	margin-bottom:3px;
 	width:10px;
 	height:10px;
 	border-radius:50%;
