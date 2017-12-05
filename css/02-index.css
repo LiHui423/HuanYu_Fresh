@@ -51,35 +51,17 @@
 	display:none;
 	top:31px;
 	transition:all 3s linear;
-	height:0px;
-	opacity:0.8;
+	left:1px;
 }
 .ng-sort-list-box .nav-cover{
-	height:440px;
 	position:absolute;
 	left:0;
 	width:190px;
+	height:400px;
 }
 .ng-sort-list-box .nav-cover{
 	top:0;
 	background: #252221;
-	opacity:0.9;
-}
-.ng-sort-list-box .sort-list{
-	position:absolute;
-	left:0;
-	top:1px;
-	height:438px;
-	width:190px;
-}
-.ng-sort-list-box .sort-list li.hei33{
-	height:32px;
-	line-height:32px;
-}
-.ng-sort-list-box .sort-list li{
-	position:relative;
-	width:175px;
-	padding:0 10px 0 8px;
 }
 .ng-nav-bar-chanel .ng-nav-index{
 	width:785px;
@@ -94,6 +76,32 @@
 	line-height:38px;
 	overflow:hidden;
 	font-family:'Microsoft Yahei';
+}
+.ng-sort-list-box .sort-list{
+	position:absolute;
+	left:0;
+	top:1px;
+	height:400px;
+	width:190px;
+	z-index:7677;
+}
+.ng-sort-list-box .sort-list li.hei33{
+	 height:32px;
+	 line-height:36px;
+ }
+.ng-sort-list-box .sort-list li.hei33 a{
+	color:#fff;
+}
+.ng-sort-list-box .sort-list li.hei33 a:hover{
+	color:#fea900;
+}
+.ng-sort-list-box .sort-list li{
+	position:relative;
+	width:175px;
+	padding:0 10px 0 8px;
+	color:#fff;
+
+	overflow:hidden;
 }
 .ng-nav-index ul.ng-nav li{
 	float:left;

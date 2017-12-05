@@ -372,33 +372,7 @@
     display:none;
     top:38px;
 }*/
-.ng-sort-list-box .nav-cover{
-    height:440px;
-    position:absolute;
-    left:0;
-    width:190px;
-}
-.ng-sort-list-box .nav-cover{
-    top:0;
-    background: #252221;
-    opacity:0.9;
-}
-.ng-sort-list-box .sort-list{
-    position:absolute;
-    left:0;
-    top:1px;
-    height:438px;
-    width:190px;
-}
-.ng-sort-list-box .sort-list li.hei33{
-    height:32px;
-    line-height:32px;
-}
-.ng-sort-list-box .sort-list li{
-    position:relative;
-    width:175px;
-    padding:0 10px 0 8px;
-}
+
 
 
 

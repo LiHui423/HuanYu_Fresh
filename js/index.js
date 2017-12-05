@@ -75,7 +75,357 @@ function getTotalTop(elem){
         url:'data/product/index.php',
         type:'GET',
         success:function(data){
-            console.log(data);
+            /**爆款推荐商品**/
+            var recommend='';
+            for(reProduct of data.recommended){
+                //console.log(reProduct);
+                recommend+=`
+                    <i class="line line1"></i>
+                    <i class="line line2"></i>
+                    <i class="line line3"></i>
+                    <i class="line line4"></i>
+                `;
+                recommend+=`
+                    <li class="commodity">
+                        <div class="commodity-wrap">
+                            <a href="#" class="imgBox" title="${reProduct.title}">
+                            	<img class="commodity-img lazy-loading" src="${reProduct.pic}" width="210" height="210">
+                            </a>
+                            <div class="commodity-intro">
+                            	<p>
+                            		<a href="#" title="${reProduct.title}">${reProduct.title}</a>
+                            	</p>
+                            	<div class="price-wrapper">
+                            		<span class="price now-price">
+                            			<i>¥</i>
+                            			<em class="price-number">${parseInt(reProduct.price_onsale)}</em>
+                            			<em class="price-last">${reProduct.price_onsale.slice(-3)}</em>
+                            		</span>
+                            		<del class="price-high last-price">
+                            			<i>¥</i>
+                            			<em class="price-number">${reProduct.price_normal}</em>
+                            		</del>
+                            	</div>
+                            </div>
+                        </div>
+                    </li>
+                `;
+            }
+            $("#recommend").html(recommend);
+            /**好物优选商品**/
+            var selected='';
+            for(seProduct of data.selected){
+                //console.log(seProduct);
+                selected+=`
+                    <li class="commodity">
+        				<a href="#" class="imgBox" title="${seProduct.title}">
+        					<img src="${seProduct.pic}" class="commodity-img lazy-loading" width="190" height="190">
+        				</a>
+        				<div class="commodity-intro">
+        					<p>
+        						<a href="#" title="${seProduct.title}">${seProduct.title}</a>
+        					</p>
+        					<div class="price-wrapper">
+								<span class="price now-price">
+									<i>¥</i>
+									<em class="price-number">${parseInt(seProduct.price_onsale)}</em>
+									<em class="price-last">${seProduct.price_onsale.slice(-3)}</em>
+								</span>
+								<del class="price-high last-price">
+									<i>¥</i>
+									<em class="price-number">${seProduct.price_normal}</em>
+								</del>
+							</div>
+        				</div>
+        			</li>
+                `;
+            }
+            $("#selected").html(selected);
+            /**新鲜水果商品**/
+            var fruitBig='';
+            var fruit='';
+            for(frProduct of data.fruit){
+                if(frProduct.details){
+                    fruitBig+=`
+                        <li class="commodity">
+        				<a href="#" class="imgBox imgBox2">
+        					<img src="${frProduct.pic}" width="250" height="250" class="lazy-loading">
+        				</a>
+        				<div class="commodity-intro wordBox">
+        					<a href="#">
+        						<p class="name">${frProduct.title}</p>
+        						<p class="desc">${frProduct.details}</p>
+        					</a>
+        					<span class="price now-price">
+        						<i>¥</i>
+        						<em class="price-number">${parseInt(frProduct.price_onsale)}</em>
+        						<em class="price-last">${frProduct.price_onsale.slice(-3)}</em>
+        					</span>
+        					<del class=" price-high last-price">
+        						<i>¥</i>
+        						<em class="price-number">${frProduct.price_normal}</em>
+        					</del>
+        					<a href="#" class="entryBtn">立即抢购</a>
+        				</div>
+        			</li>
+                    `;
+                }else{
+                    fruit+=`
+                        <li class="commodity">
+						<a class="imgBox" href="#">
+							<img class="commodity-img lazy-loading" width="190" height="190" src="${frProduct.pic}">
+						</a>
+						<div class="commodity-intro">
+							<p>
+								<a href="#">${frProduct.title}</a>
+							</p>
+							<div class="price-wrapper">
+								<span class="price now-price">
+									<i>¥</i>
+									<em class="price-number">${parseInt(frProduct.price_onsale)}</em>
+									<em class="price-last">${frProduct.price_onsale.slice(-3)}</em>
+								</span>
+								<del class="price-high last-price">
+									<i>¥</i>
+									<em class="price-number">${frProduct.price_normal}</em>
+								</del>
+							</div>
+						</div>
+					</li>
+                    `;
+                }
+
+            }
+            $("#fruitBig").html(fruitBig);
+            $("#fruit").html(fruit);
+            /**海鲜水产商品**/
+            var seafoodBig='';
+            var seafood='';
+            for(seProduct of data.seafood){
+                if(seProduct.details){
+                    seafoodBig+=`
+                        <li class="commodity">
+        				<a href="#" class="imgBox imgBox2">
+        					<img src="${seProduct.pic}" width="250" height="250" class="lazy-loading">
+        				</a>
+        				<div class="commodity-intro wordBox">
+        					<a href="#">
+        						<p class="name">${seProduct.title}</p>
+        						<p class="desc">${seProduct.details}</p>
+        					</a>
+        					<span class="price now-price">
+        						<i>¥</i>
+        						<em class="price-number">${parseInt(seProduct.price_onsale)}</em>
+        						<em class="price-last">${seProduct.price_onsale.slice(-3)}</em>
+        					</span>
+        					<del class=" price-high last-price">
+        						<i>¥</i>
+        						<em class="price-number">${seProduct.price_normal}</em>
+        					</del>
+        					<a href="#" class="entryBtn">立即抢购</a>
+        				</div>
+        			</li>
+                    `;
+                }else{
+                    seafood+=`
+                        <li class="commodity">
+						<a class="imgBox" href="#">
+							<img class="commodity-img lazy-loading" width="190" height="190" src="${seProduct.pic}">
+						</a>
+						<div class="commodity-intro">
+							<p>
+								<a href="#">${seProduct.title}</a>
+							</p>
+							<div class="price-wrapper">
+								<span class="price now-price">
+									<i>¥</i>
+									<em class="price-number">${parseInt(seProduct.price_onsale)}</em>
+									<em class="price-last">${seProduct.price_onsale.slice(-3)}</em>
+								</span>
+								<del class="price-high last-price">
+									<i>¥</i>
+									<em class="price-number">${seProduct.price_normal}</em>
+								</del>
+							</div>
+						</div>
+					</li>
+                    `;
+                }
+
+            }
+            $("#seafoodBig").html(seafoodBig);
+            $("#seafood").html(seafood);
+            /**精选肉类商品**/
+            var meatBig='';
+            var meat='';
+            for(meProduct of data.meat){
+                if(meProduct.details){
+                    meatBig+=`
+                        <li class="commodity">
+        				<a href="#" class="imgBox imgBox2">
+        					<img src="${meProduct.pic}" width="250" height="250" class="lazy-loading">
+        				</a>
+        				<div class="commodity-intro wordBox">
+        					<a href="#">
+        						<p class="name">${meProduct.title}</p>
+        						<p class="desc">${meProduct.details}</p>
+        					</a>
+        					<span class="price now-price">
+        						<i>¥</i>
+        						<em class="price-number">${parseInt(meProduct.price_onsale)}</em>
+        						<em class="price-last">${meProduct.price_onsale.slice(-3)}</em>
+        					</span>
+        					<del class=" price-high last-price">
+        						<i>¥</i>
+        						<em class="price-number">${meProduct.price_normal}</em>
+        					</del>
+        					<a href="#" class="entryBtn">立即抢购</a>
+        				</div>
+        			</li>
+                    `;
+                }else{
+                    meat+=`
+                        <li class="commodity">
+						<a class="imgBox" href="#">
+							<img class="commodity-img lazy-loading" width="190" height="190" src="${meProduct.pic}">
+						</a>
+						<div class="commodity-intro">
+							<p>
+								<a href="#">${meProduct.title}</a>
+							</p>
+							<div class="price-wrapper">
+								<span class="price now-price">
+									<i>¥</i>
+									<em class="price-number">${parseInt(meProduct.price_onsale)}</em>
+									<em class="price-last">${meProduct.price_onsale.slice(-3)}</em>
+								</span>
+								<del class="price-high last-price">
+									<i>¥</i>
+									<em class="price-number">${meProduct.price_normal}</em>
+								</del>
+							</div>
+						</div>
+					</li>
+                    `;
+                }
+
+            }
+            $("#meatBig").html(meatBig);
+            $("#meat").html(meat);
+            /**家禽蛋类商品**/
+            var eggsBig='';
+            var eggs='';
+            for(egProduct of data.eggs){
+                if(egProduct.details){
+                    eggsBig+=`
+                        <li class="commodity">
+        				<a href="#" class="imgBox imgBox2">
+        					<img src="${egProduct.pic}" width="250" height="250" class="lazy-loading">
+        				</a>
+        				<div class="commodity-intro wordBox">
+        					<a href="#">
+        						<p class="name">${egProduct.title}</p>
+        						<p class="desc">${egProduct.details}</p>
+        					</a>
+        					<span class="price now-price">
+        						<i>¥</i>
+        						<em class="price-number">${parseInt(egProduct.price_onsale)}</em>
+        						<em class="price-last">${egProduct.price_onsale.slice(-3)}</em>
+        					</span>
+        					<del class=" price-high last-price">
+        						<i>¥</i>
+        						<em class="price-number">${egProduct.price_normal}</em>
+        					</del>
+        					<a href="#" class="entryBtn">立即抢购</a>
+        				</div>
+        			</li>
+                    `;
+                }else{
+                    eggs+=`
+                        <li class="commodity">
+						<a class="imgBox" href="#">
+							<img class="commodity-img lazy-loading" width="190" height="190" src="${egProduct.pic}">
+						</a>
+						<div class="commodity-intro">
+							<p>
+								<a href="#">${egProduct.title}</a>
+							</p>
+							<div class="price-wrapper">
+								<span class="price now-price">
+									<i>¥</i>
+									<em class="price-number">${parseInt(egProduct.price_onsale)}</em>
+									<em class="price-last">${egProduct.price_onsale.slice(-3)}</em>
+								</span>
+								<del class="price-high last-price">
+									<i>¥</i>
+									<em class="price-number">${egProduct.price_normal}</em>
+								</del>
+							</div>
+						</div>
+					</li>
+                    `;
+                }
+
+            }
+            $("#eggsBig").html(eggsBig);
+            $("#eggs").html(eggs);
+            /**快手料理商品**/
+            var fastfoodBig='';
+            var fastfood='';
+            for(faProduct of data.fastfood){
+                if(faProduct.details){
+                    fastfoodBig+=`
+                        <li class="commodity">
+        				<a href="#" class="imgBox imgBox2">
+        					<img src="${faProduct.pic}" width="250" height="250" class="lazy-loading">
+        				</a>
+        				<div class="commodity-intro wordBox">
+        					<a href="#">
+        						<p class="name">${faProduct.title}</p>
+        						<p class="desc">${faProduct.details}</p>
+        					</a>
+        					<span class="price now-price">
+        						<i>¥</i>
+        						<em class="price-number">${parseInt(faProduct.price_onsale)}</em>
+        						<em class="price-last">${faProduct.price_onsale.slice(-3)}</em>
+        					</span>
+        					<del class=" price-high last-price">
+        						<i>¥</i>
+        						<em class="price-number">${faProduct.price_normal}</em>
+        					</del>
+        					<a href="#" class="entryBtn">立即抢购</a>
+        				</div>
+        			</li>
+                    `;
+                }else{
+                    fastfood+=`
+                        <li class="commodity">
+						<a class="imgBox" href="#">
+							<img class="commodity-img lazy-loading" width="190" height="190" src="${faProduct.pic}">
+						</a>
+						<div class="commodity-intro">
+							<p>
+								<a href="#">${faProduct.title}</a>
+							</p>
+							<div class="price-wrapper">
+								<span class="price now-price">
+									<i>¥</i>
+									<em class="price-number">${parseInt(faProduct.price_onsale)}</em>
+									<em class="price-last">${faProduct.price_onsale.slice(-3)}</em>
+								</span>
+								<del class="price-high last-price">
+									<i>¥</i>
+									<em class="price-number">${faProduct.price_normal}</em>
+								</del>
+							</div>
+						</div>
+					</li>
+                    `;
+                }
+
+            }
+            $("#fastfoodBig").html(fastfoodBig);
+            $("#fastfood").html(fastfood);
         },
         error:function(){
             console.log("网络故障请检查");
