@@ -4,6 +4,8 @@ $("#uname").blur(function () {
         $(".login-error").css("display","block");
         $(".login-error>span").text("用户名不能为空");
         return false;
+    }else{
+        $(".login-error").css("display","none");
     }
 });
 $("#upwd").blur(function () {
@@ -11,13 +13,16 @@ $("#upwd").blur(function () {
         $(".login-error").css("display","block");
         $(".login-error>span").text("密码不能为空");
         return false;
+    }else{
+        $(".login-error").css("display","none");
     }
 });
-$('#submit').click(function () {
-    var uname = $('#uname').value;
-    var upwd = $('#upwd').value;
+
+$('.login-submit').click(function () {
+    var uname=document.getElementById('uname').value;
+    var upwd=document.getElementById('upwd').value;
     $.ajax({
-        type: 'POST',
+        type:'POST',
         url: 'data/user/login.php',
         data: {uname:uname,upwd:upwd},
         success: function (result) {

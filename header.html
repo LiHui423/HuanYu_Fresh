@@ -48,7 +48,7 @@
             </div>
             <div class="ng-toolbar-right">
                 <div class="ng-bar-node reg-bar-node" id="reg-bar-node" style="display: block;">
-                    <a href="#" class="login">请登录</a>
+                    <a href="login.html" target="_blank" class="login">请登录</a>
                     <a href="#" target="_blank" class="login reg-bbb" >注册有礼</a>
                 </div>
                 <div class="ng-bar-node-box myorder-handle">
@@ -154,5 +154,16 @@
         </div>
     </div>
 </div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $("object").mouseover(function(){
+        console.log("111");
+        $(this).attr("data","img_fresh/svg/up.svg");
+    })
+    $("object").mouseout(function(){
+        console.log("111");
+        $(this).attr("data","img_fresh/svg/down.svg");
+    })
+</script>
 </body>
 </html>
