@@ -27,17 +27,17 @@
             <a href="#" class="single-link"></a>
             <div class="login-form">
                 <div class="login-tab">
-                    <a href="#" class="tab-item on">
+                    <a href="#" class="tab-item">
                         <span>扫码登陆</span>
                         <i></i>
                     </a>
-                    <a href="#" class="tab-item">
+                    <a href="#" class="tab-item on">
                         <span>账户登陆</span>
                         <i></i>
                     </a>
                 </div>
                 <div class="pc-login" style="display:block;">
-                    <div class="username-login" style="display:none">
+                    <div class="username-login" style="display:block">
                         <div>
                             <div class="login-warning" style="display:none;">
                                 <i></i>
@@ -50,10 +50,10 @@
                         </div>
                         <div class="username-box">
                             <div class="input-box" id="showErrorUsernameDiv">
-                                <input type="text">
-                                <label style="display:block">
+                                <input id="uname" type="text" placeholder="用户名/手机/邮箱/门店会员卡号">
+                                <!--<label style="display:block">
                                     用户名/手机/邮箱/门店会员卡号
-                                </label>
+                                </label>-->
                                 <i class="icon username-icon"></i>
                                 <i class="clear"></i>
                             </div>
@@ -61,8 +61,8 @@
                         </div>
                         <div class="password-box">
                             <div class="input-box" id="showErrorPwdDiv">
-                                <input type="password" id="password">
-                                <label>密码</label>
+                                <input id="upwd" type="password" placeholder="密码">
+                                <!--<label>密码</label>-->
                                 <i class="icon password-icon"></i>
                                 <i class="clear"></i>
                             </div>
@@ -101,7 +101,7 @@
                         <a href="#" id="submit" class="login-submit">登 陆</a>
                     </div>
 
-                    <div class="scan-login" style="display:block;">
+                    <div class="scan-login" style="display:none;">
                         <div class="scan-box clearfix" style="display:block">
                             <div class="qrcode edge" style="width:141px;height:141px;margin:0 auto;transition:.3s all;position:relative;">
                                 <img style="display:block;width:100%;height:100%" class="qrCodesId">
@@ -147,6 +147,8 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
 

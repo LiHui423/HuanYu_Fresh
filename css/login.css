@@ -149,8 +149,8 @@ a:hover{
 .login-form .pc-login .input-box{
     position:relative;
     border:1px solid #ddd;
-    color:#999;
-    padding:0 32px 0 36px;
+    color:#ddd;
+    padding:0 32px 0 0px;
     height:36px;
     overflow:hidden;
 }
