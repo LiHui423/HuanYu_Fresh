@@ -1,6 +1,6 @@
 /************加载广告轮播*************/
 $.ajax({
-    url:'data/product/index.php',
+    url:'data/product_details/index.php',
     type:"GET",
     success:function(data){
         //console.log(data.carouselItems);
@@ -69,7 +69,7 @@ function getTotalTop(elem){
     $('.footer').load('footer.html');
 /*********************加载楼层内容************************/
     $.ajax({
-        url:'data/product/index.php',
+        url:'data/product_details/index.php',
         type:'GET',
         success:function(data){
             /**爆款推荐商品**/

@@ -1,0 +1,504 @@
+div.search-results.clearfix.mt10{
+    z-index:0;
+}
+.clearfix{zoom:1}
+.clearfix:after{
+    content:'.';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.search-results .results-rblock{
+    width:990px;
+    float:right;
+    background:#fff;
+}
+.ml10{
+    margin-left:10px !important;
+}
+.search-results .results-lblock{
+    float:left;
+    width:190px;
+    min-height:1px;
+}
+.second-filter{
+    margin-bottom:20px;
+    background:#f6f6f6;
+    border:1px solid #ebebeb;
+    overflow:visible;
+    position:relative;
+    z-index:18;
+}
+.second-filter .sort{
+    border-bottom:1px solid #dedede;
+    padding-bottom:5px;
+    width:218px;
+}
+.second-filter a{
+    float:left;
+}
+.second-filter .sort a{
+    display:inline-block;
+    padding:0 18px 0 5px;
+    height:23px;
+    line-height:23px;
+    color:#333;
+    border-top:1px solid #fff;
+    border-right:1px solid #ededed;
+    border-bottom:1px solid #ededed;
+    border-left:1px solid #fff;
+    background:#fff url(../img_fresh/icon.png) no-repeat;
+}
+.second-filter .sort a.def{
+    margin-top:8px;
+    margin-left:10px;
+    width:45px;
+    padding:0;
+    text-align:center;
+    background:#fff;
+}
+.second-filter .sort a.cur{
+    border:1px solid #f60;
+    border-left:none;
+    color:#fff;
+    background-color:#f60;
+}
+.second-filter .sort a.xl{
+    margin-top:8px;
+    background-position: 31px -318px;
+}
+.second-filter .sort a.pjs{
+    margin-top:8px;
+    background-position: 46px -318px;
+}
+.second-filter .sort a.prive{
+    margin-top:8px;
+    background-position: 31px -357px;
+}
+.second-filter .second-box{
+    width:770px;
+    border-bottom:1px solid #dedede;
+}
+.fr{
+    float:right;
+}
+.second-filter .price-section-box{
+    height:24px;
+    float:left;
+    margin-top:8px;
+}
+.second-filter .price-section-box .price-input{
+    overflow:hidden;
+}
+.fl{
+    float:left;
+}
+.second-filter .price-section-box .price-input div{
+    background:#fff;
+}
+.second-filter .price-section-box .price-input input{
+    width:39px;
+    border:1px solid #e5e5e5;
+    padding-left:12px;
+    height:22px;
+    line-height:22px;
+    background:url(../img_fresh/icon.png) no-repeat 3px -1751px;
+}
+.second-filter .price-section-box .price-input em{
+    margin:0 5px;
+}
+.second-filter .city{
+    margin-left:10px;
+    float:left;
+}
+.second-filter .city span.span-address{
+    margin-top:7px;
+    line-height:23px;
+    border:1px solid #ccc;
+    margin-right:-1px;
+    background-color:#fff;
+    padding-left:6px;
+}
+.second-filter span{
+    float:left;
+}
+.second-filter .city .cityselect{
+    width:135px;
+    height:25px;
+    margin-top:7px;
+    float:left;
+}
+.ui-city{
+    display:inline-block;
+    font-size:12px;
+    position:relative;
+}
+.second-filter .city .ui-city-toggle{
+    border-color:#ccc;
+    padding:5px 5px 4px 6px;
+}
+.ui-city a,.ui-city a:visited{
+    line-height:14px;
+    color:#333;
+    text-decoration:none;
+    outline:none;
+    cursor:pointer;
+}
+.ui-city-toggle{
+    display:inline-block;;
+    border:1px solid #bbb;
+    padding:6px 5px 6px 6px;
+    color:#000;
+    background:#fff;
+    position:relative;
+    z-index:100;
+}
+.ui-city-toggle .address-placement{
+    font-style:normal;
+    float:left;
+}
+.second-filter .ui-city-toggle span{
+    padding-right:2px;
+}
+.ui-city .dn{
+    display:none;
+}
+.second-filter .ui-city .arr{
+    margin:0;
+}
+.ui-city-toggle .arr{
+    position:relative;
+    top:5px;
+    float:left;
+}
+.ui-city .arr{
+    display:inline-block;
+    width:0;
+    height:0;
+    border-color:#bbb;
+    border-width:5px;
+    border-style:solid dashed dashed;
+    font-size:0;
+    line-height:0;
+    overflow:hidden;
+}
+.second-filter .label-screening{
+    float:left;
+    position:relative;
+    width:781px;
+    height:38px;
+}
+.second-filter .label-screening .condition{
+    width:560px;
+    position:absolute;
+    left:0;
+    top:0;
+    float:left;
+    height:38px;
+    overflow:hidden;
+    padding:0 0 0 20px;
+    border-left:1px solid #f6f6f6;
+}
+.second-filter .label-screening .condition a{
+    float:left;
+    height:26px;
+    line-height:26px;
+    cursor:pointer;
+    white-space:nowrap;
+}
+.second-filter .label-screening .condition a b{
+    *
+    width:12px;
+    height:12px;
+    margin:7px 5px 0 0;
+    vertical-align:middle;
+    border:1px solid #ccc;
+    background:#fff;
+    overflow:hidden;
+}
+.second-filter .label-screening .condition a span{
+    white-space:nowrap;
+}
+.second-filter .search-box{
+    width:180px;
+    position:relative;
+    color:#999;
+    margin:7px 13px 0 0;
+    overflow:hidden;
+    border:1px solid #ddd;
+    height:24px;
+    border-radius:2px;
+    background:url(../img_fresh/icon.png) 160px -1698px no-repeat #fff;
+}
+.second-filter .search-box input{
+    color:#999;
+    width:150px;
+    height:14px;
+    line-height:14px;
+    padding:5px 0 5px 6px;
+    border:None;
+    background:none;
+}
+.second-filter .search-box a{
+    position:absolute;
+    top:0;
+    right:0;
+    width:24px;
+    height:22px;
+}
+.filter-results{
+    position:relative;
+    width:990px;
+}
+.filter-results ul{
+    margin:0 -14px 45px 0;
+}
+.filter-results li.subcode{
+    padding-bottom:122px;
+}
+.filter-results li{
+    margin-right:13px;
+    float:left;
+    position:relative;
+    width:238px;
+    height:380px;
+}
+.filter-results li .border-out{
+    position:absolute;
+    left:0;
+    top:0px;
+    width:238px;
+
+}
+.filter-results li .border-in{
+    border:1px solid transparent;
+    padding-top:25px;
+}
+.filter-results li .res-img{
+    padding:0 9px;
+}
+.filter-results li .img-block{
+    position:relative;
+    width:220px;
+    padding:0 0 10px;
+    border-bottom:1px solid #eee;
+}
+.filter-results li .img-block a{
+    display:block;
+    width:220px;
+    height:220px;
+    text-align:center;
+}
+.filter-results li .img-block img{
+    vertical-align:top;
+    display:inline-block;
+}
+.filter-results li .img-change{
+    position:relative;
+    margin:5px auto 0;
+    width:220px;
+    height:40px;
+    overflow:hidden;
+}
+.filter-results li .img-change .imgScrollList_3.imgScrollList_4{
+    width:200px;
+}
+.filter-results li .img-change .imgScrollList_3{
+    position:relative;
+    width:195px;
+    height:40px;
+    overflow:hidden;
+    margin:0 auto;
+}
+.filter-results li .img-change .imgScrollList_3 dl{
+    position:relative;
+    width:999px;
+    height:40px;
+}
+.filter-results li .img-change .imgScrollList_3.imgScrollList_4 dd{
+    margin-right:13px;
+}
+.filter-results li .img-change .imgScrollList_3 dd{
+    float:left;
+    margin-right:10px;
+    width:40px;
+    height:40px;
+    overflow:hidden;
+}
+.filter-results li .img-change .imgScrollList_3 dd a.select{
+    width:38px;
+    height:38px;
+    border:1px solid #f60;
+}
+.filter-results li .img-change .imgScrollList_3 dd a{
+    float:left;
+    width:38px;
+    height:38px;
+    overflow:hidden;
+    border:1px solid #fff;
+}
+.filter-results li .img-change .imgScrollList_3 dd a img{
+    width:38px;
+    height:38px;
+}
+.filter-results li .res-info{
+    z-index:30;
+    width:220px;
+    margin:0 auto;
+    position:relative;
+}
+.filter-results li .prive-tag{
+    width:220px;
+    position:relative;
+    height:28px;
+    overflow:hidden;
+}
+.filter-results li .prive-tag .prive{
+    margin-top:8px;
+    float:left;
+    height:20px;
+    font-family:tahoma;
+    color:#f60;
+    font-size:20px;
+    line-height:20px;
+    vertical-align:middle;
+    overflow:hidden;
+}
+.filter-results li .prive-tag .prive b{
+    font-size:12px;
+    font-family:arial;
+    margin-right:2px;
+    font-weight:400;
+}
+.filter-results li .prive-tag .prive i{
+    font-size:12px;
+    vertical-align: middle;
+}
+.filter-results li .sell-point{
+    margin-top:6px;
+    height:34px;
+    overflow:hidden;
+    position:relative;
+}
+.filter-results li .sell-point a{
+    word-break:break-all;
+}
+.filter-results li a b.highlight{
+    color:#f60;
+    font-weight:700;
+    display:inline;
+    background:none;
+}
+.filter-results li a b{
+    margin-top:16px;
+    width:5px;
+    height:9px;
+    overflow:hidden;
+    cursor:pointer;
+}
+.filter-results li .sell-point a em{
+    color:#f60;
+}
+.filter-results li .com-cnt{
+    width:220px;
+    height:18px;
+    line-height:18px;
+    margin-top:5px;
+    overflow:hidden;
+}
+.filter-results li .com-cnt i{
+    color:#999;
+    float:left;
+}
+.filter-results li .com-cnt a{
+    font-weight:bold;
+    float:left;
+}
+.filter-results li .com-cnt .collect{
+    float:right;
+    color:#2272c8;
+    font-weight:normal;
+    font-family:"Microsoft YaHei";
+    cursor:pointer;
+}
+.filter-results li .com-cnt .collect i{
+    display:none;
+    margin:0;
+    color:#2272c8;
+}
+.filter-results li .com-cnt a.num{
+    color:#2272c8;
+    line-height:18px;
+}
+.filter-results li .seller.no-more{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.filter-results li.on .seller{
+    display:block;
+}
+.filter-results li .seller{
+    margin-top:10px;
+    height:18px;
+    color:#999;
+    height:auto;
+}
+.filter-results li .seller a{
+    color:#666;
+}
+.filter-results li .res-opt{
+    z-index:20;
+    display:block;
+    width:237px;
+    height:32px;
+    border-top:1px solid #eaeaea;
+    line-height:32px;
+    margin-top:7px;
+}
+.filter-results li .res-opt a.two-thirds.cart-btn{
+    width:151px;
+}
+.filter-results li .res-opt a.cart-btn, .filter-results li .res-opt a.support-btn{
+    width:236px;
+    height:32px;
+    margin-top:-1px;
+    margin-left:-1px;
+    border:1px solid #eaeaea;
+    color:#f60;
+}
+.filter-results li .res-opt a.third-no, .filter-results li .res-opt a.find-like{
+    width:84px;
+}
+.filter-results li .res-opt a{
+    float:left;
+    height:32px;
+    color:#999;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
