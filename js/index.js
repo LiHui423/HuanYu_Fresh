@@ -26,6 +26,9 @@ $.ajax({
             dir: 'y',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
             interval: 2000//默认间隔2000毫秒
         })
+    },
+    error:function () {
+        console.log("网络故障请检查");
     }
 });
 

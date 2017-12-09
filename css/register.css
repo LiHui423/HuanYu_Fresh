@@ -106,9 +106,30 @@
     right:12px;
     background:url('../img_fresh/sprite.png') -120px -93px no-repeat;
 }
+.reg-form .input-box .input-wrapper .checkUname{
+    position:absolute;
+    top:0;
+    right:-145px;
+    width:100px;
+    display:inline-block;
+}
+.reg-form .input-box .input-wrapper .checkUpwd{
+    position:absolute;
+    top:0;
+    right:-18px;
+    width:100px;
+    display:inline-block;
+}
+.reg-form .input-box .input-wrapper .checkUphone{
+    position:absolute;
+    top:0;
+    right:-7px;
+    width:100px;
+    display:inline-block;
+}
 .reg-form .msg-field .send-msg{
     float:left;
-    width:143px;
+    width:137px;
     height:100%;
     line-height:38px;
     text-align:center;
