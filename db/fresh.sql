@@ -221,5 +221,3 @@ INSERT INTO fresh_index_product VALUES
 
 
 
-
-
