@@ -133,8 +133,8 @@ INSERT INTO fresh_user VALUES
 
 /****首页轮播广告商品****/
 INSERT INTO fresh_index_carousel VALUES
-(NULL, 'img_fresh/carousel/151090204408737457.jpg','轮播广告商品1','product_details.html?lid=28'),
-(NULL, 'img_fresh/carousel/151091065335811592.jpg','轮播广告商品2','product_details.html?lid=19'),
+(NULL, 'img_fresh/carousel/151141943187265032.jpg','轮播广告商品1','product_details.html?lid=28'),
+(NULL, 'img_fresh/carousel/151142251030207861.jpg','轮播广告商品2','product_details.html?lid=19'),
 (NULL, 'img_fresh/carousel/151091085627436074.jpg','轮播广告商品3','lookforward.html');
 
 
@@ -147,7 +147,7 @@ INSERT INTO fresh_goods_family VALUES
 (NULL,'快手料理fastfood');
 
 /**********首页生鲜商品************/
-INSERT INTO fresh_index_product VALUES
+/*INSERT INTO fresh_index_product VALUES
 (NULL,'【苏宁生鲜】民维大牧汗精制肥牛片220g 牛羊肉 火锅食材 精选肉类 肥牛卷','','img_fresh/0010128947-000000000602726171_1.jpg',32.9,'#',1,1,0,0,0,0,0,0,18.9),
 (NULL,'【苏宁生鲜】山东栖霞优质红富士8个果径80mm以上 新鲜水果','','img_fresh/0010128947-000000000781465665_1.jpg',29.8,'#',1,0,0,0,0,0,0,0,22.8),
 (NULL,'【苏宁生鲜】秘鲁蓝莓1盒(约125g/盒) 新鲜水果','','img_fresh/0010128947-000000000688383639_1.jpg',25.8,'#',1,0,1,0,0,0,0,0,10.9),
@@ -196,7 +196,7 @@ INSERT INTO fresh_index_product VALUES
 (NULL,'【苏宁生鲜】 思念手打天下猪肉白菜水饺495g 饺子 方便速食','','img_fresh/0010128947-000000000602731448_1.jpg',16.90,'#',0,0,0,0,0,0,0,1,12.90),
 (NULL,'【苏宁生鲜】 湾仔码头一品奶黄包350g 包子 包子 方便速食','','img_fresh/0010128947-000000000602793246_1.jpg',13.90,'#',0,0,0,0,0,0,0,1,11.90),
 (NULL,'【苏宁生鲜】太阳谷藤椒鸡排500g 方便速食','','img_fresh/0010128947-000000000602731551_1.jpg',28.90,'#',0,0,0,0,0,0,0,1,18.50),
-(NULL,'【苏宁生鲜】百香果200g 新鲜水果 国产','','img_fresh/0010128947-000000000619666061_1.jpg',0.00,'#',0,0,0,1,0,0,0,0,5.60);
+(NULL,'【苏宁生鲜】百香果200g 新鲜水果 国产','','img_fresh/0010128947-000000000619666061_1.jpg',0.00,'#',0,0,0,1,0,0,0,0,5.60);*/
 
 
 

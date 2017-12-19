@@ -8,6 +8,7 @@ $.ajax({
         var indicatorHtml = '';
         for (var i = 0; i < data.carouselItems.length; i++) {
             var c = data.carouselItems[i];
+            console.log(c);
             adHtml += `
 					<li ${i>0?'style="display:none;"':''}>
 						<a href="${c.href}"><img src="${c.img}"></a>
@@ -71,11 +72,11 @@ function getTotalTop(elem){
     });
     $('.footer').load('footer.html');
 /*********************加载楼层内容************************/
-    $.ajax({
+    /*$.ajax({
         url:'data/product_details/index.php',
         type:'GET',
         success:function(data){
-            /**爆款推荐商品**/
+            /!**爆款推荐商品**!/
             var recommend='';
             for(reProduct of data.recommended){
                 //console.log(reProduct);
@@ -112,7 +113,7 @@ function getTotalTop(elem){
                 `;
             }
             $("#recommend").html(recommend);
-            /**好物优选商品**/
+            /!**好物优选商品**!/
             var selected='';
             for(seProduct of data.selected){
                 //console.log(seProduct);
@@ -141,7 +142,7 @@ function getTotalTop(elem){
                 `;
             }
             $("#selected").html(selected);
-            /**新鲜水果商品**/
+            /!**新鲜水果商品**!/
             var fruitBig='';
             var fruit='';
             for(frProduct of data.fruit){
@@ -198,7 +199,7 @@ function getTotalTop(elem){
             }
             $("#fruitBig").html(fruitBig);
             $("#fruit").html(fruit);
-            /**海鲜水产商品**/
+            /!**海鲜水产商品**!/
             var seafoodBig='';
             var seafood='';
             for(seProduct of data.seafood){
@@ -255,7 +256,7 @@ function getTotalTop(elem){
             }
             $("#seafoodBig").html(seafoodBig);
             $("#seafood").html(seafood);
-            /**精选肉类商品**/
+            /!**精选肉类商品**!/
             var meatBig='';
             var meat='';
             for(meProduct of data.meat){
@@ -312,7 +313,7 @@ function getTotalTop(elem){
             }
             $("#meatBig").html(meatBig);
             $("#meat").html(meat);
-            /**家禽蛋类商品**/
+            /!**家禽蛋类商品**!/
             var eggsBig='';
             var eggs='';
             for(egProduct of data.eggs){
@@ -369,7 +370,7 @@ function getTotalTop(elem){
             }
             $("#eggsBig").html(eggsBig);
             $("#eggs").html(eggs);
-            /**快手料理商品**/
+            /!**快手料理商品**!/
             var fastfoodBig='';
             var fastfood='';
             for(faProduct of data.fastfood){
@@ -430,7 +431,7 @@ function getTotalTop(elem){
         error:function(){
             console.log("网络故障请检查");
         }
-    });
+    });*/
 
 
 /*****************加载左侧电梯***********************/

@@ -8,7 +8,7 @@ $sql="SELECT cid,img,title,href FROM fresh_index_carousel";
 $result=mysqli_query($conn,$sql);
 $output['carouselItems'] = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-//查询爆款推荐商品信息
+/*//查询爆款推荐商品信息
 $sql="SELECT * FROM fresh_index_product WHERE seq_recommended=1";
 $result=mysqli_query($conn,$sql);
 $output['recommended']=mysqli_fetch_all($result,MYSQLI_ASSOC);
@@ -41,7 +41,7 @@ $output['eggs']=mysqli_fetch_all($result,MYSQLI_ASSOC);
 //查询快手料理商品信息
 $sql="SELECT * FROM fresh_index_product WHERE seq_fastfood=1";
 $result=mysqli_query($conn,$sql);
-$output['fastfood']=mysqli_fetch_all($result,MYSQLI_ASSOC);
+$output['fastfood']=mysqli_fetch_all($result,MYSQLI_ASSOC);*/
 
 
 echo json_encode($output);
