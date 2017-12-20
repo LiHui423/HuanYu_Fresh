@@ -76,11 +76,17 @@ CREATE TABLE fresh_index_product(
   title VARCHAR(64),
   details VARCHAR(128),
   pic VARCHAR(128),
-  price DECIMAL(10,2),
+  price_normal DECIMAL(10,2),
   href VARCHAR(128),
   seq_recommended TINYINT,
-  seq_new_arrival TINYINT,
-  seq_top_sale TINYINT
+  seq_selected TINYINT,
+  seq_top_sale TINYINT,
+  seq_fruit TINYINT,
+  seq_seafood TINYINT,
+  seq_meat TINYINT,
+  seq_eggs TINYINT,
+  seq_fastfood TINYINT,
+  price_onsale DECIMAL(10,2),
 );
 /*生鲜商品所属类别家族*/
 CREATE TABLE fresh_goods_family(
@@ -196,7 +202,7 @@ INSERT INTO fresh_goods_family VALUES
 (NULL,'【苏宁生鲜】 思念手打天下猪肉白菜水饺495g 饺子 方便速食','','img_fresh/0010128947-000000000602731448_1.jpg',16.90,'#',0,0,0,0,0,0,0,1,12.90),
 (NULL,'【苏宁生鲜】 湾仔码头一品奶黄包350g 包子 包子 方便速食','','img_fresh/0010128947-000000000602793246_1.jpg',13.90,'#',0,0,0,0,0,0,0,1,11.90),
 (NULL,'【苏宁生鲜】太阳谷藤椒鸡排500g 方便速食','','img_fresh/0010128947-000000000602731551_1.jpg',28.90,'#',0,0,0,0,0,0,0,1,18.50),
-(NULL,'【苏宁生鲜】百香果200g 新鲜水果 国产','','img_fresh/0010128947-000000000619666061_1.jpg',0.00,'#',0,0,0,1,0,0,0,0,5.60);*/
+(NULL,'【苏宁生鲜】百香果200g 新鲜水果 国产','','img_fresh/0010128947-000000000619666061_1.jpg',0.00,'#',0,0,0,1,0,0,0,0,5.60);
 
 
 
