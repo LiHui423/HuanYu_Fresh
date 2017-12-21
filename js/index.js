@@ -1,3 +1,40 @@
+function getTotalTop(elem){
+    var sum=0;
+    do{
+        sum+=elem.offsetTop;
+        elem=elem.offsetParent;
+    }while(elem);
+    return sum;
+}
+/***************异步加载头部和尾部***************/
+/*$('.header').load('header.html',function(){*/
+    $.ajax({
+        url:'data/user/session_data.php',
+        success:function(result){
+            //console.log(result);
+            if(result.uname){
+                $('#reg-bar-node').html('<div>&nbsp;欢迎:'+result.uname+'<a href="logout.html" title="退出登陆">&nbsp;&nbsp;退出</a>');
+                $('[href="logout.html"]').click(function(e){
+                    e.preventDefault();
+                    $.ajax({
+                        url:'data/user/logout.php',
+                        success:function(result){
+                            if(result.code===200){
+                                alert('退出成功,点击确定重新返回登陆页面');
+                                location.href='login.html';
+                            }else{
+                                alert('登录退出失败！原因：'+result.msg);
+                            }
+                        }
+                    });
+                });
+            }
+
+        }
+    });
+/*});*/
+$('.footer').load('footer.html');
+
 /************加载广告轮播*************/
 $.ajax({
     url:'data/product_details/index.php',
@@ -33,43 +70,9 @@ $.ajax({
 });
 
 
-function getTotalTop(elem){
-    var sum=0;
-    do{
-        sum+=elem.offsetTop;
-        elem=elem.offsetParent;
-    }while(elem);
-    return sum;
-}
-(()=>{
-    /***************异步加载头部和尾部***************/
-    $('.header').load('header.html',function(){
-        $.ajax({
-            url:'data/user/session_data.php',
-            success:function(result){
-                //console.log(result);
-                if(result.uname){
-                    $('#reg-bar-node').html('<div>&nbsp;欢迎:'+result.uname+'<a href="logout.html" title="退出登陆">&nbsp;&nbsp;退出</a>');
-                    $('[href="logout.html"]').click(function(e){
-                        e.preventDefault();
-                        $.ajax({
-                            url:'data/user/logout.php',
-                            success:function(result){
-                                if(result.code===200){
-                                    alert('退出成功,点击确定重新返回登陆页面');
-                                        location.href='login.html';
-                                }else{
-                                    alert('登录退出失败！原因：'+result.msg);
-                                }
-                            }
-                        });
-                    });
-                }
 
-            }
-        })
-    });
-    $('.footer').load('footer.html');
+(()=>{
+
 /*********************加载楼层内容************************/
     $.ajax({
         url:'data/product_details/index.php',
